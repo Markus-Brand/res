@@ -5,8 +5,8 @@
     <title>Tutorial 1 - Movements</title>
     <description>Use the WASD-Keys to move to the goal. Be careful not to fall down.</description>
     <startPosition>
-      <x>3</x>
-      <y>2</y>
+      <x>0</x>
+      <y>4</y>
     </startPosition>
     <size>
       <x>5</x>
