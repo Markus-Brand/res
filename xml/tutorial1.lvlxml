@@ -1,1 +1,54 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><map><meta><gridmode>Grid4</gridmode><title>Tutorial 1 - Movements</title><description>Use the WASD-Keys to move to the goal. Be careful not to fall down.</description><startPosition><x>3</x><y>2</y></startPosition><size><x>5</x><y>5</y></size></meta><grid><tiles id="0"><tile id="0">solid</tile><tile id="1">solid</tile><tile id="2">solid</tile><tile id="3">solid</tile><tile id="4">solid</tile></tiles><tiles id="1"><tile id="0">solid</tile><tile id="1">empty</tile><tile id="2">empty</tile><tile id="3">empty</tile><tile id="4">solid</tile></tiles><tiles id="2"><tile id="0">solid</tile><tile id="1">empty</tile><tile id="2">solid</tile><tile id="3">solid</tile><tile id="4">solid</tile></tiles><tiles id="3"><tile id="0">solid</tile><tile id="1">empty</tile><tile id="2">solid</tile><tile id="3">empty</tile><tile id="4">empty</tile></tiles><tiles id="4"><tile id="0">solid</tile><tile id="1">empty</tile><tile id="2">solid</tile><tile id="3">solid</tile><tile id="4">goal</tile></tiles></grid></map>
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+  <meta>
+    <gridmode>Grid4</gridmode>
+    <title>Tutorial 1 - Movements</title>
+    <description>Use the WASD-Keys to move to the goal. Be careful not to fall down.</description>
+    <startPosition>
+      <x>3</x>
+      <y>2</y>
+    </startPosition>
+    <size>
+      <x>5</x>
+      <y>5</y>
+    </size>
+    <breakAllTilesToWin>false</breakAllTilesToWin>
+  </meta>
+  <grid>
+    <tiles id="0">
+      <tile id="0">solid</tile>
+      <tile id="1">solid</tile>
+      <tile id="2">solid</tile>
+      <tile id="3">solid</tile>
+      <tile id="4">solid</tile>
+    </tiles>
+    <tiles id="1">
+      <tile id="0">solid</tile>
+      <tile id="1">empty</tile>
+      <tile id="2">empty</tile>
+      <tile id="3">empty</tile>
+      <tile id="4">solid</tile>
+    </tiles>
+    <tiles id="2">
+      <tile id="0">solid</tile>
+      <tile id="1">empty</tile>
+      <tile id="2">solid</tile>
+      <tile id="3">solid</tile>
+      <tile id="4">solid</tile>
+    </tiles>
+    <tiles id="3">
+      <tile id="0">solid</tile>
+      <tile id="1">empty</tile>
+      <tile id="2">solid</tile>
+      <tile id="3">empty</tile>
+      <tile id="4">empty</tile>
+    </tiles>
+    <tiles id="4">
+      <tile id="0">solid</tile>
+      <tile id="1">empty</tile>
+      <tile id="2">solid</tile>
+      <tile id="3">solid</tile>
+      <tile id="4">goal</tile>
+    </tiles>
+  </grid>
+</map>

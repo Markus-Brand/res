@@ -1,1 +1,54 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><map><meta><gridmode>Grid4</gridmode><title>Example Level</title><description>Just to test the App</description><startPosition><x>2</x><y>2</y></startPosition><size><x>5</x><y>5</y></size></meta><grid><tiles id="0"><tile id="0">breaking:1</tile><tile id="1">breaking:1</tile><tile id="2">breaking:1</tile><tile id="3">breaking:1</tile><tile id="4">breaking:1</tile></tiles><tiles id="1"><tile id="0">solid</tile><tile id="1">empty</tile><tile id="2">empty</tile><tile id="3">empty</tile><tile id="4">solid</tile></tiles><tiles id="2"><tile id="0">solid</tile><tile id="1">empty</tile><tile id="2">solid</tile><tile id="3">solid</tile><tile id="4">solid</tile></tiles><tiles id="3"><tile id="0">solid</tile><tile id="1">empty</tile><tile id="2">empty</tile><tile id="3">empty</tile><tile id="4">empty</tile></tiles><tiles id="4"><tile id="0">solid</tile><tile id="1">solid</tile><tile id="2">solid</tile><tile id="3">solid</tile><tile id="4">goal</tile></tiles></grid></map>
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+  <meta>
+    <gridmode>Grid4</gridmode>
+    <title>Example Level</title>
+    <description>Just to test the App</description>
+    <startPosition>
+      <x>2</x>
+      <y>2</y>
+    </startPosition>
+    <size>
+      <x>5</x>
+      <y>5</y>
+    </size>
+    <breakAllTilesToWin>false</breakAllTilesToWin>
+  </meta>
+  <grid>
+    <tiles id="0">
+      <tile id="0">breaking:1</tile>
+      <tile id="1">breaking:1</tile>
+      <tile id="2">breaking:1</tile>
+      <tile id="3">breaking:1</tile>
+      <tile id="4">breaking:1</tile>
+    </tiles>
+    <tiles id="1">
+      <tile id="0">solid</tile>
+      <tile id="1">empty</tile>
+      <tile id="2">empty</tile>
+      <tile id="3">empty</tile>
+      <tile id="4">solid</tile>
+    </tiles>
+    <tiles id="2">
+      <tile id="0">solid</tile>
+      <tile id="1">empty</tile>
+      <tile id="2">solid</tile>
+      <tile id="3">solid</tile>
+      <tile id="4">solid</tile>
+    </tiles>
+    <tiles id="3">
+      <tile id="0">solid</tile>
+      <tile id="1">empty</tile>
+      <tile id="2">empty</tile>
+      <tile id="3">empty</tile>
+      <tile id="4">empty</tile>
+    </tiles>
+    <tiles id="4">
+      <tile id="0">solid</tile>
+      <tile id="1">solid</tile>
+      <tile id="2">solid</tile>
+      <tile id="3">solid</tile>
+      <tile id="4">goal</tile>
+    </tiles>
+  </grid>
+</map>
