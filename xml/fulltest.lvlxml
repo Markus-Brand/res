@@ -10,7 +10,7 @@
     </startPosition>
     <size>
       <x>7</x>
-      <y>7</y>
+      <y>5</y>
     </size>
     <breakAllTilesToWin>false</breakAllTilesToWin>
   </meta>
