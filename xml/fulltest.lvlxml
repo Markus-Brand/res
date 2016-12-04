@@ -21,7 +21,7 @@
       <tile id="2">teleporter:6@1</tile>
       <tile id="3">empty</tile>
       <tile id="4">breaking:1</tile>
-      <tile id="5">breaking:1</tile>
+      <tile id="5">breaking:3</tile>
       <tile id="6">solid</tile>
     </tiles>
     <tiles id="1">
