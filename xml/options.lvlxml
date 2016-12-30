@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+  <meta>
+    <gridmode>Grid4</gridmode>
+    <title>options</title>
+    <description>control options by stepping on the corrosponding tile (music: 0%, 25%, 50%, 75%, 100%; quality: low, high; fps: on, off)</description>
+    <startPosition>
+      <x>5</x>
+      <y>3</y>
+    </startPosition>
+    <size>
+      <x>7</x>
+      <y>7</y>
+    </size>
+    <breakAllTilesToWin>false</breakAllTilesToWin>
+  </meta>
+  <grid>
+    <tiles id="0">
+      <tile id="0">solid</tile>
+      <tile id="1">solid</tile>
+      <tile id="2">solid</tile>
+      <tile id="3">solid</tile>
+      <tile id="4">solid</tile>
+      <tile id="5">solid</tile>
+      <tile id="6">empty</tile>
+    </tiles>
+    <tiles id="1">
+      <tile id="0">solid</tile>
+      <tile id="1">breaking:1</tile>
+      <tile id="2">breaking:1</tile>
+      <tile id="3">breaking:1</tile>
+      <tile id="4">breaking:1</tile>
+      <tile id="5">solid</tile>
+      <tile id="6">empty</tile>
+    </tiles>
+    <tiles id="2">
+      <tile id="0">solid</tile>
+      <tile id="1">solid</tile>
+      <tile id="2">solid</tile>
+      <tile id="3">solid</tile>
+      <tile id="4">solid</tile>
+      <tile id="5">solid</tile>
+      <tile id="6">empty</tile>
+    </tiles>
+    <tiles id="3">
+      <tile id="0">solid</tile>
+      <tile id="1">solid</tile>
+      <tile id="2">breaking:1</tile>
+      <tile id="3">breaking:1</tile>
+      <tile id="4">solid</tile>
+      <tile id="5">solid</tile>
+      <tile id="6">newLevel:mainmenue</tile>
+    </tiles>
+    <tiles id="4">
+      <tile id="0">solid</tile>
+      <tile id="1">solid</tile>
+      <tile id="2">solid</tile>
+      <tile id="3">solid</tile>
+      <tile id="4">solid</tile>
+      <tile id="5">solid</tile>
+      <tile id="6">empty</tile>
+    </tiles>
+    <tiles id="5">
+      <tile id="0">solid</tile>
+      <tile id="1">solid</tile>
+      <tile id="2">breaking:1</tile>
+      <tile id="3">breaking:1</tile>
+      <tile id="4">solid</tile>
+      <tile id="5">solid</tile>
+      <tile id="6">empty</tile>
+    </tiles>
+    <tiles id="6">
+      <tile id="0">solid</tile>
+      <tile id="1">solid</tile>
+      <tile id="2">solid</tile>
+      <tile id="3">solid</tile>
+      <tile id="4">solid</tile>
+      <tile id="5">solid</tile>
+      <tile id="6">empty</tile>
+    </tiles>
+  </grid>
+</map>

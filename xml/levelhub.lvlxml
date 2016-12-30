@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+  <meta>
+    <gridmode>Grid4</gridmode>
+    <title>levelHub</title>
+    <description>the hub for all levels</description>
+    <startPosition>
+      <x>1</x>
+      <y>2</y>
+    </startPosition>
+    <size>
+      <x>12</x>
+      <y>3</y>
+    </size>
+    <breakAllTilesToWin>false</breakAllTilesToWin>
+  </meta>
+  <grid>
+    <tiles id="0">
+      <tile id="0">empty</tile>
+      <tile id="1">empty</tile>
+      <tile id="2">newLevel:tutorial1</tile>
+      <tile id="3">empty</tile>
+      <tile id="4">empty</tile>
+      <tile id="5">newLevel:tutorial2</tile>
+      <tile id="6">empty</tile>
+      <tile id="7">empty</tile>
+      <tile id="8">newLevel:cool</tile>
+      <tile id="9">empty</tile>
+      <tile id="10">empty</tile>
+      <tile id="11">newLevel:coolice</tile>
+    </tiles>
+    <tiles id="1">
+      <tile id="0">empty</tile>
+      <tile id="1">empty</tile>
+      <tile id="2">solid</tile>
+      <tile id="3">empty</tile>
+      <tile id="4">empty</tile>
+      <tile id="5">solid</tile>
+      <tile id="6">empty</tile>
+      <tile id="7">empty</tile>
+      <tile id="8">solid</tile>
+      <tile id="9">empty</tile>
+      <tile id="10">empty</tile>
+      <tile id="11">solid</tile>
+    </tiles>
+    <tiles id="2">
+      <tile id="0">newLevel:mainmenue</tile>
+      <tile id="1">solid</tile>
+      <tile id="2">solid</tile>
+      <tile id="3">solid</tile>
+      <tile id="4">solid</tile>
+      <tile id="5">solid</tile>
+      <tile id="6">solid</tile>
+      <tile id="7">solid</tile>
+      <tile id="8">solid</tile>
+      <tile id="9">solid</tile>
+      <tile id="10">solid</tile>
+      <tile id="11">solid</tile>
+    </tiles>
+  </grid>
+</map>

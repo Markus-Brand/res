@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+  <meta>
+    <gridmode>Grid4</gridmode>
+    <title>credits</title>
+    <description>a small overview of the credits!?</description>
+    <startPosition>
+      <x>0</x>
+      <y>0</y>
+    </startPosition>
+    <size>
+      <x>1</x>
+      <y>2</y>
+    </size>
+    <breakAllTilesToWin>false</breakAllTilesToWin>
+  </meta>
+  <grid>
+    <tiles id="0">
+      <tile id="0">solid</tile>
+    </tiles>
+    <tiles id="1">
+      <tile id="0">newLevel:mainmenue</tile>
+    </tiles>
+  </grid>
+</map>
