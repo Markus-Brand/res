@@ -86,7 +86,7 @@
       <tile id="1">bridge:3</tile>
       <tile id="2">solid</tile>
       <tile id="3">ice</tile>
-      <tile id="4">solid</tile>
+      <tile id="4">ice</tile>
       <tile id="5">breaking:2</tile>
       <tile id="6">breaking:2</tile>
       <tile id="7">breaking:1</tile>
