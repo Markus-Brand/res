@@ -14,6 +14,15 @@
     </size>
     <breakAllTilesToWin>false</breakAllTilesToWin>
   </meta>
+  <objects>
+    <textOverlay>
+      <position>
+        <x>0</x>
+        <y>-1</y>
+      </position>
+      <text>Move to the goal!</text>
+    </textOverlay>
+  </objects>
   <grid>
     <tiles id="0">
       <tile id="0">solid</tile>
