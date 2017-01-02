@@ -19,7 +19,7 @@
       <tile id="0">solid</tile>
     </tiles>
     <tiles id="1">
-      <tile id="0">newLevel:mainmenue</tile>
+      <tile id="0">newLevel:mainMenue</tile>
     </tiles>
   </grid>
 </map>

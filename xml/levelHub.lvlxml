@@ -44,7 +44,7 @@
       <tile id="11">solid</tile>
     </tiles>
     <tiles id="2">
-      <tile id="0">newLevel:mainmenue</tile>
+      <tile id="0">newLevel:mainMenue</tile>
       <tile id="1">solid</tile>
       <tile id="2">solid</tile>
       <tile id="3">solid</tile>
