@@ -142,7 +142,7 @@
       <tile id="4">empty</tile>
       <tile id="5">empty</tile>
       <tile id="6">teleporter:2@7</tile>
-      <tile id="7">solid</tile>
+      <tile id="7">breaking:1</tile>
       <tile id="8">teleporter:12@7</tile>
       <tile id="9">empty</tile>
       <tile id="10">empty</tile>
