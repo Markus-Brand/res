@@ -49,7 +49,7 @@
       <tile id="3">breaking:1</tile>
       <tile id="4">solid</tile>
       <tile id="5">solid</tile>
-      <tile id="6">newLevel:mainmenue</tile>
+      <tile id="6">newLevel:mainMenue</tile>
     </tiles>
     <tiles id="4">
       <tile id="0">solid</tile>

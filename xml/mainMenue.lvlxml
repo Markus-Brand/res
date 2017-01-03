@@ -119,7 +119,7 @@
       <tile id="5">empty</tile>
       <tile id="6">bridge:-2</tile>
       <tile id="7">empty</tile>
-      <tile id="8">newLevel:mainmenue</tile>
+      <tile id="8">newLevel:mainMenue</tile>
       <tile id="9">empty</tile>
       <tile id="10">bridge:-2</tile>
       <tile id="11">empty</tile>
