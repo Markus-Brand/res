@@ -268,7 +268,7 @@
       <tile id="11">empty</tile>
       <tile id="12">bridge:+4</tile>
       <tile id="13">switch:4</tile>
-      <tile id="14">bridge:-3</tile>
+      <tile id="14">breaking:1</tile>
     </tiles>
   </grid>
 </map>
