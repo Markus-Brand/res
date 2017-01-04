@@ -12,7 +12,8 @@
       <x>15</x>
       <y>15</y>
     </size>
-    <breakAllTilesToWin>false</breakAllTilesToWin>
+    <escapeAction>levelHub</escapeAction>
+    <winAction>levelHub</winAction>
   </meta>
   <grid>
     <tiles id="0">

@@ -12,7 +12,6 @@
       <x>17</x>
       <y>7</y>
     </size>
-    <breakAllTilesToWin>false</breakAllTilesToWin>
   </meta>
   <grid>
     <tiles id="0">

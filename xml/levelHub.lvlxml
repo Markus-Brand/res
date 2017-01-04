@@ -9,10 +9,10 @@
       <y>2</y>
     </startPosition>
     <size>
-      <x>12</x>
+      <x>15</x>
       <y>3</y>
     </size>
-    <breakAllTilesToWin>false</breakAllTilesToWin>
+    <escapeAction>mainMenue</escapeAction>
   </meta>
   <grid>
     <tiles id="0">
@@ -21,13 +21,16 @@
       <tile id="2">newLevel:tutorial1</tile>
       <tile id="3">empty</tile>
       <tile id="4">empty</tile>
-      <tile id="5">newLevel:tutorial2</tile>
+      <tile id="5">newLevel:fullTest</tile>
       <tile id="6">empty</tile>
       <tile id="7">empty</tile>
       <tile id="8">newLevel:cool</tile>
       <tile id="9">empty</tile>
       <tile id="10">empty</tile>
       <tile id="11">newLevel:coolice</tile>
+      <tile id="12">empty</tile>
+      <tile id="13">empty</tile>
+      <tile id="14">newLevel:wilmi</tile>
     </tiles>
     <tiles id="1">
       <tile id="0">empty</tile>
@@ -35,13 +38,16 @@
       <tile id="2">solid</tile>
       <tile id="3">empty</tile>
       <tile id="4">empty</tile>
-      <tile id="5">solid</tile>
+      <tile id="5">gameStateBridge:1</tile>
       <tile id="6">empty</tile>
       <tile id="7">empty</tile>
-      <tile id="8">solid</tile>
+      <tile id="8">gameStateBridge:2</tile>
       <tile id="9">empty</tile>
       <tile id="10">empty</tile>
-      <tile id="11">solid</tile>
+      <tile id="11">gameStateBridge:3</tile>
+      <tile id="12">empty</tile>
+      <tile id="13">empty</tile>
+      <tile id="14">gameStateBridge:4</tile>
     </tiles>
     <tiles id="2">
       <tile id="0">newLevel:mainMenue</tile>
@@ -56,6 +62,9 @@
       <tile id="9">solid</tile>
       <tile id="10">solid</tile>
       <tile id="11">solid</tile>
+      <tile id="12">solid</tile>
+      <tile id="13">solid</tile>
+      <tile id="14">solid</tile>
     </tiles>
   </grid>
 </map>

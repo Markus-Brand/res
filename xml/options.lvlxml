@@ -12,7 +12,7 @@
       <x>7</x>
       <y>7</y>
     </size>
-    <breakAllTilesToWin>false</breakAllTilesToWin>
+    <escapeAction>mainMenue</escapeAction>
   </meta>
   <grid>
     <tiles id="0">
