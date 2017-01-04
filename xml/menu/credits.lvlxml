@@ -12,14 +12,14 @@
       <x>1</x>
       <y>2</y>
     </size>
-    <escapeAction>mainMenue</escapeAction>
+    <escapeAction>menu\\mainMenu</escapeAction>
   </meta>
   <grid>
     <tiles id="0">
       <tile id="0">solid</tile>
     </tiles>
     <tiles id="1">
-      <tile id="0">newLevel:mainMenue</tile>
+      <tile id="0">newLevel:menu\\mainMenu</tile>
     </tiles>
   </grid>
 </map>

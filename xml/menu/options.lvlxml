@@ -12,7 +12,7 @@
       <x>7</x>
       <y>7</y>
     </size>
-    <escapeAction>mainMenue</escapeAction>
+    <escapeAction>menu\\mainMenu</escapeAction>
   </meta>
   <grid>
     <tiles id="0">
@@ -49,7 +49,7 @@
       <tile id="3">breaking:1</tile>
       <tile id="4">solid</tile>
       <tile id="5">solid</tile>
-      <tile id="6">newLevel:mainMenue</tile>
+      <tile id="6">newLevel:menu\\mainMenu</tile>
     </tiles>
     <tiles id="4">
       <tile id="0">solid</tile>

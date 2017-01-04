@@ -12,15 +12,15 @@
       <x>9</x>
       <y>11</y>
     </size>
-    <escapeAction>levelHub</escapeAction>
-    <winAction>levelHub</winAction>
+    <breakAllTilesToWin>false</breakAllTilesToWin>
   </meta>
+  <objects/>
   <grid>
     <tiles id="0">
       <tile id="0">solid</tile>
-      <tile id="1">bridge:-1</tile>
-      <tile id="2">switch:1</tile>
-      <tile id="3">breaking:2</tile>
+      <tile id="1">solid</tile>
+      <tile id="2">solid</tile>
+      <tile id="3">solid</tile>
       <tile id="4">breaking:1</tile>
       <tile id="5">empty</tile>
       <tile id="6">empty</tile>

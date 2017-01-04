@@ -12,8 +12,8 @@
       <x>5</x>
       <y>5</y>
     </size>
-    <escapeAction>levelHub</escapeAction>
-    <winAction>levelHub</winAction>
+    <escapeAction>menu\\levelHub</escapeAction>
+    <winAction>menu\\levelHub</winAction>
   </meta>
   <objects>
     <textOverlay>
