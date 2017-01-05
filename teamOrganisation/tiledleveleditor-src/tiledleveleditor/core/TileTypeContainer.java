@@ -29,8 +29,8 @@ public class TileTypeContainer {
 		for (TileType t: getTypes()) {
             String tileSerial = t.generateNew().serialize();
             for (int l = longest + 1; true; l++) {
-                if (tileSerial.length() > l && 
-                        tileSerial.substring(0, l).equals(serial.substring(0, l))) {
+                if (tileSerial.length() > l && serial.length() > l &&
+                        tileSerial.substring(0, l).equalsIgnoreCase(serial.substring(0, l))) {
                     longest = l;
                     type = t;
                 } else {
@@ -47,7 +47,9 @@ public class TileTypeContainer {
 
 		types.add(new TileType.NoParams("Solid"));
 
-		types.add(new TileType.NoParams("Goal"));
+		types.add(new TileType.NoParams("Ice"));
+
+		types.add(new TileType.Simple("Goal", "handler=menu/levelHub"));
 
 		types.add(new TileType.Simple("Breaking", "stepAmount=1"));
 
@@ -56,5 +58,11 @@ public class TileTypeContainer {
 		types.add(new TileType.Simple("Switch", "switch=1"));
 
 		types.add(new TileType.Simple("Bridge", "condition=+1"));
+
+		types.add(new TileType.Simple("GameStateBridge", "level=tutorial1"));
+
+		types.add(new TileType.Simple("NewLevel", "targetLevel=menu/mainMenu"));
+
+		types.add(new TileType.Simple("ColorChange", "color=orange"));
 	}
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
   <meta>
-    <gridmode>Grid4</gridmode>
     <title>credits</title>
     <description>a small overview of the credits!?</description>
+    <escapeAction>menu/mainMenu</escapeAction>
     <startPosition>
       <x>0</x>
       <y>0</y>
@@ -12,8 +12,8 @@
       <x>1</x>
       <y>2</y>
     </size>
-    <escapeAction>menu/mainMenu</escapeAction>
   </meta>
+  <objects/>
   <grid>
     <tiles id="0">
       <tile id="0">solid</tile>

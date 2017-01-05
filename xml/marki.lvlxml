@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
   <meta>
-    <gridmode>Grid4</gridmode>
     <title>Unnamed Level</title>
     <description/>
+    <escapeAction>menu/levelHub</escapeAction>
     <startPosition>
       <x>1</x>
       <y>1</y>
@@ -12,7 +12,6 @@
       <x>13</x>
       <y>11</y>
     </size>
-    <breakAllTilesToWin>false</breakAllTilesToWin>
   </meta>
   <objects/>
   <grid>
@@ -49,7 +48,7 @@
     <tiles id="2">
       <tile id="0">ice</tile>
       <tile id="1">ice</tile>
-      <tile id="2">goal</tile>
+      <tile id="2">goal:menu/levelHub</tile>
       <tile id="3">ice</tile>
       <tile id="4">ice</tile>
       <tile id="5">ice</tile>

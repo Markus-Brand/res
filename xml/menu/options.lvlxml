@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
   <meta>
-    <gridmode>Grid4</gridmode>
     <title>options</title>
     <description>control options by stepping on the corrosponding tile (music: 0%, 25%, 50%, 75%, 100%; quality: low, high; fps: on, off)</description>
+    <escapeAction>menu/mainMenu</escapeAction>
     <startPosition>
       <x>5</x>
       <y>3</y>
@@ -12,8 +12,8 @@
       <x>7</x>
       <y>8</y>
     </size>
-    <escapeAction>menu/mainMenu</escapeAction>
   </meta>
+  <objects/>
   <grid>
     <tiles id="0">
       <tile id="0">solid</tile>

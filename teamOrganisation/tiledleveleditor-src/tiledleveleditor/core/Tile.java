@@ -1,5 +1,6 @@
 package tiledleveleditor.core;
 
+import java.awt.Point;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -52,5 +53,14 @@ public abstract class Tile {
 
 	public void setOption(String string, String s) {
 		options.put(string, s);
+	}
+	
+	public static Point fromSmalltalk(String data) {
+		String[] d = data.split("@");
+		return new Point(Integer.valueOf(d[0]), Integer.valueOf(d[1]));
+	}
+	
+	public static String toSmalltalk(Point data) {
+		return data.x + "@" + data.y;
 	}
 }

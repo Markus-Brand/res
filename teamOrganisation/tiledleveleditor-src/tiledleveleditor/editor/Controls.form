@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="formKeyPressed"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel1" pref="376" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel1" pref="276" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;title&gt;Untitled Document.md&lt;/title&gt;&lt;style&gt;&lt;/style&gt;&lt;/head&gt;&lt;body id=&quot;preview&quot;&gt; &lt;h1&gt;&lt;a id=&quot;Stueuerung_0&quot;&gt;&lt;/a&gt;Stueuerung&lt;/h1&gt; &lt;p&gt;Den TiledLevelEditor bedient man am besten mit einer Maus. Au&#xdf;erdem sind f&#xfc;r viele Optionen Keyboard-shortcuts hinterlegt.&lt;/p&gt; &lt;p&gt;Es gibt 2 Arten Tools: &lt;code&gt;Change Tile Options&lt;/code&gt; und &lt;code&gt;New Tile: *&lt;/code&gt;. Hat man eines der Letzteren Art ausgew&#xe4;hlt, so kann man mit der linken Maustaste (&lt;strong&gt;klick oder drag&lt;/strong&gt;) dieses Tile zeichnen. Ein &lt;strong&gt;Doppelklick auf den Toolbareintrag&lt;/strong&gt; ver&#xe4;ndert die Optionen des &lt;em&gt;Prototyp&lt;/em&gt;-Tiles dieses Tile-Tools. Ist &lt;code&gt;Change Tile Options&lt;/code&gt; ausgew&#xe4;hlt, kann man &lt;em&gt;zus&#xe4;tzlich zu den anderen Maustasten&lt;/em&gt; auch mit der linken Maustaste die Anicht verschieben. Au&#xdf;erdem kann man jederzeit mit einem Rechtsklick auf ein Tile &lt;em&gt;dessen Optionen &#xe4;ndern&lt;/em&gt;.&lt;/p&gt; &lt;p&gt;Mit dem Mausrad kann man zoomen, per drag mit der rechten Maustaste die Ansicht verschieben.&lt;/p&gt;  &lt;/body&gt;&lt;/html&gt;"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

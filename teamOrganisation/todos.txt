@@ -1,4 +1,4 @@
- - Flo: Menü als Level getarnt
+ - Flo: Menü als Level getarnt (done)
  - Markus: Texturen / TimerTiles
  - Merlin: Tiles
  - Tom: Levels + -Editor
@@ -8,15 +8,15 @@ LevelEditor
 Scoreboard
 online+*
 sounds
-animationen / vfx / Partikel
+vfx
 von einem Level ins nächste fallen
 achievements
 versteckte Hassos (jumpscare)
 
 Tiles:
- - /rutschig (eis) \
- - \schleudern     /
+ - eis-ecken
+ - schleudern
  - Sprungplattform
  - bewegende Plattformen
- - TimerTiles
+ - TimerTiles (was war damit gemeint?)
  - Laufbänder

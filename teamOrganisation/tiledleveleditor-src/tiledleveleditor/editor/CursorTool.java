@@ -39,7 +39,7 @@ public abstract class CursorTool {
 	};
 
 	public static final CursorTool createTileTool(TileType type) {
-		return new TileTool(type, "New Tile: " + type.getName());
+		return new TileTool(type, type.getName());
 	}
 	;
 	
@@ -95,12 +95,12 @@ public abstract class CursorTool {
 			StringBuilder b = new StringBuilder(super.getName());
 			
 			if (getParamPrototypeTile().getOptions().size() > 0) {
-				b.append("{ ");
+				b.append(" {");
 				b.append(getParamPrototypeTile().getOptions().entrySet().stream()
 						.map((Entry<String, String> e) -> e.getKey() + "=" + e.getValue())
 						.reduce((String t, String u) -> t + ", " + u)
 						.get());
-				b.append(" }");
+				b.append("}");
 			}
 			return b.toString();
 		}

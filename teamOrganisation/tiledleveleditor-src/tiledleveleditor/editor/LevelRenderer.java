@@ -3,9 +3,11 @@ package tiledleveleditor.editor;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Point;
-import java.util.Arrays;
-import tiledleveleditor.core.GridMode;
 import tiledleveleditor.core.Level;
+import tiledleveleditor.core.LevelOverlay;
+import tiledleveleditor.core.Tile;
+import tiledleveleditor.core.TileTypeContainer;
+import static tiledleveleditor.editor.TileRenderer.scaleFontAndGetOffset;
 
 /**
  * A wrapped level, able to draw. Contains view status information. can
@@ -38,6 +40,9 @@ public class LevelRenderer {
 	 * @param g
 	 */
 	public void render(Graphics2D g) {
+		if (level == null) {
+			return;
+		}
 
 		Point dim = level.getGrid().getDimensions();
 		for (int x = 0; x < dim.x; x++) {
@@ -49,6 +54,17 @@ public class LevelRenderer {
 					mark = Color.red;
 				}
 				tileRenderer.render(g, level.getGrid().getTile(relative, true), drawLoc, scale, mark);
+			}
+		}
+		
+		for (LevelOverlay o: level.getOverlays()) {
+			if (o instanceof LevelOverlay.TextOverlay) {
+				LevelOverlay.TextOverlay to = (LevelOverlay.TextOverlay)o;
+				Point p = localToGlobal(to.getGridPosition());
+				
+				g.setColor(Color.BLACK);
+				scaleFontAndGetOffset("test", scale, g);
+				g.drawString(to.getText(), p.x, p.y);
 			}
 		}
 	}
@@ -111,12 +127,7 @@ public class LevelRenderer {
 	}
 
 	private Point localToTile(float[] local) {
-		if (level.getGridMode() == GridMode.Grid4) {
-			return new Point((int) Math.floor(local[0]), (int) Math.floor(local[1]));
-		}
-
-		System.err.println("localToTile - hex");
-		return new Point();
+		return new Point((int) Math.floor(local[0]), (int) Math.floor(local[1]));
 	}
 
 	void moveView(Point delta) {
@@ -127,12 +138,23 @@ public class LevelRenderer {
 
 	void zoom(double d) {
 		scale *= d;
-        scale = Math.min(Math.max(scale, 10), 100);
+        scale = Math.min(Math.max(scale, 10), 50);
 	}
 
 	public void reCoordinate() {
 		viewPos[0] -= level.getGrid().getTileOffset().x;
 		viewPos[1] -= level.getGrid().getTileOffset().x;
 		level.reCoordinate();
+	}
+
+	void setLevelTile(Point tcoord, Tile newTile) {
+		getLevel().getGrid().setTile(tcoord, newTile);
+		
+		if (newTile.getType() == TileTypeContainer.get("empty")) {
+			return;
+		}
+		Point move = new Point(Math.min(tcoord.x, 0), Math.min(tcoord.y, 0));
+		viewPos[0] += move.x;
+		viewPos[1] += move.y;
 	}
 }

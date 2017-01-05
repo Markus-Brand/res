@@ -15,7 +15,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import tiledleveleditor.core.Grid;
-import tiledleveleditor.core.GridMode;
 import tiledleveleditor.core.Level;
 import tiledleveleditor.core.Tile;
 import tiledleveleditor.core.TileTypeContainer;
@@ -31,7 +30,7 @@ public class EditPanel extends JPanel {
 
 	public void setLevel(Level l) {
 		this.levelRenderer = new LevelRenderer(l);
-		this.cursorStatus = new CursorStatus();
+		this.cursorStatus = new CursorStatus(new Point(10, 10));
 	}
 
 	@Override
@@ -50,7 +49,7 @@ public class EditPanel extends JPanel {
 			if (mouse != null) {
 				float[] loc = levelRenderer.globalToLocal(mouse, true);
 				String msg = "(" + (int)Math.floor(loc[0]) + ", " + (int)Math.floor(loc[1]) + ")";
-				g.drawString("Loc: " + msg, 10, 37);
+				g.drawString("Loc: " + msg, cursorStatus.getSize().x + 20, 20);
 			}/**/
 
 		}
@@ -68,8 +67,17 @@ public class EditPanel extends JPanel {
 		}
 		Point delta = new Point(evt.getPoint().x - lastDrag.x, evt.getPoint().y - lastDrag.y);
 		lastDrag = evt.getPoint();
+		
+		if (cursorStatus.isPointOn(evt.getPoint())) {
+			return;
+		}
 
-		levelRenderer.moveView(delta);
+		if ((evt.getModifiers() & MouseEvent.BUTTON1_MASK) != 0 
+				&& (cursorStatus.getCurrentTool() instanceof CursorTool.TileTool)) {
+			onClick(evt.getPoint(), true);
+		} else {
+			levelRenderer.moveView(delta);
+		}
 	}
 
 	void onMouseUp(MouseEvent evt) {
@@ -79,9 +87,9 @@ public class EditPanel extends JPanel {
 	void onScroll(MouseWheelEvent evt) {
 		float zoomFactor;
 		if (evt.getPreciseWheelRotation() > 0) {
-			zoomFactor = 1 / 1.05f;
+			zoomFactor = 1 / 1.1f;
 		} else {
-			zoomFactor = 1.05f;
+			zoomFactor = 1.1f;
 		}
 		levelRenderer.zoom(zoomFactor);
 	}
@@ -105,7 +113,6 @@ public class EditPanel extends JPanel {
 			JOptionPane.showMessageDialog(this, "There was an error in saving your Level.", "Error", JOptionPane.ERROR_MESSAGE);
 		}
 	}
-	
 	
 	public static File getOpenStartFolder() {
 		File relative = new File(".\\xml");
@@ -132,8 +139,9 @@ public class EditPanel extends JPanel {
 	void newLevel() {
 		levelFile = null;
 		
-		Grid g = new Grid(GridMode.Grid4, TileTypeContainer.get("empty"), new Point(5, 5));
-		Level l = new Level(g, new Point(2, 2));
+		Grid g = new Grid(TileTypeContainer.get("empty"), new Point(1, 1));
+		Level l = new Level(g, new Point(0, 0));
+		l.getGrid().setTile(new Point(), TileTypeContainer.get("solid").generateNew());
 		setLevel(l);
 	}
 
@@ -141,19 +149,23 @@ public class EditPanel extends JPanel {
 		if (levelRenderer == null || cursorStatus == null) {
 			return;
 		}
-		if (cursorStatus.getCurrentTool() == CursorTool.NOP) {
+		if (cursorStatus.onClick(evt)) {
 			return;
 		}
-		Point tcoord = levelRenderer.getTile(evt.getPoint());
+		onClick(evt.getPoint(), (evt.getModifiers() & MouseEvent.BUTTON1_MASK) != 0);
+	}
+	
+	private void onClick(Point p, boolean left) {
+		Point tcoord = levelRenderer.getTile(p);
 		Tile t = levelRenderer.getLevel().getGrid().getTile(tcoord);
-		Tile newTile = null;
-		if ((evt.getModifiers() & MouseEvent.BUTTON1_MASK) != 0) {
+		Tile newTile;
+		if (left) {
 			newTile = cursorStatus.getCurrentTool().handleClick(t);
-		} else if ((evt.getModifiers() & MouseEvent.BUTTON3_MASK) != 0) {
+		} else {
 			newTile = cursorStatus.getCurrentTool().handleSecondClick(t);
 		}
 		if (newTile != null) {
-			levelRenderer.getLevel().getGrid().setTile(tcoord, newTile);
+			levelRenderer.setLevelTile(tcoord, newTile);
 		}
         levelRenderer.getLevel().reCoordinate();
         levelRenderer.getLevel().getGrid().collapse();
@@ -161,9 +173,7 @@ public class EditPanel extends JPanel {
 	}
 
 	void onKeyTyped(KeyEvent evt) {
-		if (evt.getKeyChar() == '\t') {
-			cursorStatus.cycleTools();
-		}
+		cursorStatus.onKey(evt);
 	}
 
 	public Level getLevel() {
@@ -177,7 +187,5 @@ public class EditPanel extends JPanel {
 	public CursorStatus getCursorStatus() {
 		return cursorStatus;
 	}
-	
-
 	
 }

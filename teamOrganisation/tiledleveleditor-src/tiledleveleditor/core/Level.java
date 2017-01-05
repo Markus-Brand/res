@@ -1,6 +1,8 @@
 package tiledleveleditor.core;
 
 import java.awt.Point;
+import java.util.ArrayList;
+import java.util.Collection;
 
 /**
  * One stage containing everything needed: The grid structure, the starting
@@ -12,16 +14,26 @@ public class Level {
 	private Point startPosition;
 	private String title;
 	private String description;
-	private boolean breakAllTilesToWin = false;
+	private String escapeHandler;
+	private Collection<LevelOverlay> overlays = new ArrayList<>();
 
 	public Level(Grid grid, Point startPosition) {
 		this.grid = grid;
 		this.startPosition = startPosition;
 		this.title = "Unnamed Level";
 		this.description = "";
+		this.escapeHandler = "menu/mainMenu";
 	}
 	
 	public void reCoordinate() {
+		grid.iterator().forEachRemaining((Tile t) -> {
+			if (t.getType() == TileTypeContainer.get("teleporter")) {
+				Point p = Tile.fromSmalltalk(t.getOption("target"));
+				p.x += grid.getTileOffset().x;
+				p.y += grid.getTileOffset().y;
+				t.setOption("target", Tile.toSmalltalk(p));
+			}
+		});
 		startPosition.x += grid.getTileOffset().x;
 		startPosition.y += grid.getTileOffset().y;
 		grid.getTileOffset().x = 0;
@@ -34,10 +46,6 @@ public class Level {
 
 	public Point getStartPosition() {
 		return startPosition;
-	}
-
-	public GridMode getGridMode() {
-		return getGrid().getMode();
 	}
 
 	public void setTitle(String title) {
@@ -60,11 +68,15 @@ public class Level {
 		this.startPosition = startPosition;
 	}
 
-	public void setBreakAllTilesToWin(boolean breakAllTilesToWin) {
-		this.breakAllTilesToWin = breakAllTilesToWin;
+	public Collection<LevelOverlay> getOverlays() {
+		return overlays;
 	}
 
-	public boolean isBreakAllTilesToWin() {
-		return breakAllTilesToWin;
+	public String getEscapeHandler() {
+		return escapeHandler;
+	}
+
+	public void setEscapeHandler(String escapeHandler) {
+		this.escapeHandler = escapeHandler;
 	}
 }

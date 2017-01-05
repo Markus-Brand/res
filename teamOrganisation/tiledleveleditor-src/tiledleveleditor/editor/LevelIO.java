@@ -12,8 +12,8 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import tiledleveleditor.core.Grid;
-import tiledleveleditor.core.GridMode;
 import tiledleveleditor.core.Level;
+import tiledleveleditor.core.LevelOverlay;
 import tiledleveleditor.core.Tile;
 import tiledleveleditor.core.TileTypeContainer;
 
@@ -29,36 +29,46 @@ public class LevelIO {
 			Document doc = dBuilder.parse(f);
 			doc.getDocumentElement().normalize();
 			Element map = doc.getDocumentElement();
-			Element meta = (Element)map.getElementsByTagName("meta").item(0);
-			
-            GridMode gridMode = GridMode.valueOf(getText(meta, "gridmode"));
-			Grid levelGrid = new Grid(gridMode, TileTypeContainer.get("empty"));
-            
-            Element grid = (Element)map.getElementsByTagName("grid").item(0);
-            
-            NodeList tilesList = grid.getElementsByTagName("tiles");
-            for (int _y = 0; _y < tilesList.getLength(); _y++) {
-                Element tiles = (Element)tilesList.item(_y);
-                int y = Integer.valueOf(tiles.getAttribute("id"));
-                
-                NodeList tileList = tiles.getElementsByTagName("tile");
-                for (int _x = 0; _x < tileList.getLength(); _x++) {
-                    Element tile = (Element)tileList.item(_x);
-                    int x = Integer.valueOf(tile.getAttribute("id"));
-                    
-                    String serial = tile.getTextContent();
-                    
-                    Tile t = Tile.deserialize(serial);
-                    levelGrid.setTile(new Point(x, y), t);
-                }
-            }
-            
+			Element meta = (Element) map.getElementsByTagName("meta").item(0);
+
+			Grid levelGrid = new Grid(TileTypeContainer.get("empty"));
+
+			Element grid = (Element) map.getElementsByTagName("grid").item(0);
+
+			NodeList tilesList = grid.getElementsByTagName("tiles");
+			for (int _y = 0; _y < tilesList.getLength(); _y++) {
+				Element tiles = (Element) tilesList.item(_y);
+				int y = Integer.valueOf(tiles.getAttribute("id"));
+
+				NodeList tileList = tiles.getElementsByTagName("tile");
+				for (int _x = 0; _x < tileList.getLength(); _x++) {
+					Element tile = (Element) tileList.item(_x);
+					int x = Integer.valueOf(tile.getAttribute("id"));
+
+					String serial = tile.getTextContent();
+
+					Tile t = Tile.deserialize(serial);
+					levelGrid.setTile(new Point(x, y), t);
+				}
+			}
+
 			Point startPos = getPoint(meta, "startPosition");
 			Level level = new Level(levelGrid, startPos);
 			level.setTitle(getText(meta, "title"));
 			level.setDescription(getText(meta, "description"));
-			level.setBreakAllTilesToWin(getBoolean(meta, "breakAllTilesToWin"));
-            return level;
+			level.setEscapeHandler(getText(meta, "escapeAction"));
+
+			Element objects = (Element) map.getElementsByTagName("objects").item(0);
+			if (objects != null) {
+				NodeList overlays = objects.getChildNodes();
+				for (int o = 0; o < overlays.getLength(); o++) {
+					if (overlays.item(o) instanceof Element) {
+						level.getOverlays().add(LevelOverlay.loadFrom((Element) overlays.item(o)));
+					}
+				}
+			}
+
+			return level;
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -77,12 +87,17 @@ public class LevelIO {
 			//meta inf
 			Element meta = doc.createElement("meta");
 			rootElement.appendChild(meta);
-			addTextNode(doc, meta, "gridmode", l.getGridMode().toString());
 			addTextNode(doc, meta, "title", l.getTitle());
 			addTextNode(doc, meta, "description", l.getDescription());
+			addTextNode(doc, meta, "escapeAction", l.getEscapeHandler());
 			addPoint(doc, meta, "startPosition", l.getStartPosition());
 			addPoint(doc, meta, "size", l.getGrid().getDimensions());
-			addBoolean(doc, meta, "breakAllTilesToWin", l.isBreakAllTilesToWin());
+
+			Element objects = doc.createElement("objects");
+			rootElement.appendChild(objects);
+			for (LevelOverlay o : l.getOverlays()) {
+				o.saveTo(doc, objects);
+			}
 
 			Element grid = doc.createElement("grid");
 			rootElement.appendChild(grid);
@@ -102,10 +117,10 @@ public class LevelIO {
 					tileElem.appendChild(doc.createTextNode(serial));
 				}
 			}
-			
+
 			OutputFormat format = new OutputFormat(doc);
 			format.setIndent(2);
-			
+
 			//TransformerFactory transformerFactory = TransformerFactory.newInstance();
 			//Transformer transformer = transformerFactory.newTransformer();
 			//DOMSource source = new DOMSource(doc);
@@ -122,38 +137,56 @@ public class LevelIO {
 		}
 	}
 
-	private static final void addTextNode(Document doc, Node node, String name, String value) {
+	public static final void addTextNode(Document doc, Node node, String name, String value) {
 		Element textNode = doc.createElement(name);
 		textNode.appendChild(doc.createTextNode(value));
 		node.appendChild(textNode);
 	}
-	
+
 	private static final void addBoolean(Document doc, Node node, String name, boolean value) {
 		Element boolNode = doc.createElement(name);
 		boolNode.appendChild(doc.createTextNode(value ? "true" : "false"));
 		node.appendChild(boolNode);
 	}
 
-	private static final void addPoint(Document doc, Node node, String pointName, Point p) {
+	public static final void addFloatPoint(Document doc, Node node, String pointName, float[] p) {
+		Element pE = doc.createElement(pointName);
+		addTextNode(doc, pE, "x", p[0] + "");
+		addTextNode(doc, pE, "y", p[1] + "");
+		node.appendChild(pE);
+	}
+
+	public static final void addPoint(Document doc, Node node, String pointName, Point p) {
 		Element pE = doc.createElement(pointName);
 		addTextNode(doc, pE, "x", p.x + "");
 		addTextNode(doc, pE, "y", p.y + "");
 		node.appendChild(pE);
 	}
-    
-    private static final String getText(Element node, String textName) {
-        return node.getElementsByTagName(textName).item(0).getTextContent();
-    }
-    
-    private static final Point getPoint(Element node, String pointName) {
-        Element pnode = (Element)node.getElementsByTagName(pointName).item(0);
-        int x = Integer.valueOf(getText(pnode, "x"));
-        int y = Integer.valueOf(getText(pnode, "y"));
-        return new Point(x, y);
-    }
-	
+
+	public static final String getText(Element node, String textName) {
+		try {
+			return node.getElementsByTagName(textName).item(0).getTextContent();
+		} catch (Exception exception) {
+			return "";
+		}
+	}
+
+	private static final Point getPoint(Element node, String pointName) {
+		Element pnode = (Element) node.getElementsByTagName(pointName).item(0);
+		int x = Integer.valueOf(getText(pnode, "x"));
+		int y = Integer.valueOf(getText(pnode, "y"));
+		return new Point(x, y);
+	}
+
+	public static final float[] getFloatPoint(Element node, String pointName) {
+		Element pnode = (Element) node.getElementsByTagName(pointName).item(0);
+		float x = Float.valueOf(getText(pnode, "x"));
+		float y = Float.valueOf(getText(pnode, "y"));
+		return new float[]{x, y};
+	}
+
 	private static final boolean getBoolean(Element node, String boolName) {
-		Element bNode = (Element)node.getElementsByTagName(boolName).item(0);
+		Element bNode = (Element) node.getElementsByTagName(boolName).item(0);
 		if (bNode == null) {
 			return false;
 		}

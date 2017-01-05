@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
   <meta>
-    <gridmode>Grid4</gridmode>
     <title>Unnamed Level</title>
     <description/>
+    <escapeAction>menu/levelHub</escapeAction>
     <startPosition>
       <x>7</x>
       <y>7</y>
@@ -12,9 +12,8 @@
       <x>15</x>
       <y>15</y>
     </size>
-    <escapeAction>levelHub</escapeAction>
-    <winAction>levelHub</winAction>
   </meta>
+  <objects/>
   <grid>
     <tiles id="0">
       <tile id="0">bridge:+5</tile>
@@ -29,7 +28,7 @@
       <tile id="9">empty</tile>
       <tile id="10">empty</tile>
       <tile id="11">empty</tile>
-      <tile id="12">goal</tile>
+      <tile id="12">goal:menu/levelHub</tile>
       <tile id="13">bridge:+1</tile>
       <tile id="14">bridge:+4</tile>
     </tiles>

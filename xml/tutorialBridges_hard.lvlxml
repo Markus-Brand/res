@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
   <meta>
-    <gridmode>Grid4</gridmode>
     <title>Cool Level</title>
     <description>Merlin und Erik haben sich mal Gedanken gemacht...</description>
+    <escapeAction>menu/levelHub</escapeAction>
     <startPosition>
       <x>2</x>
       <y>6</y>
@@ -12,7 +12,6 @@
       <x>9</x>
       <y>11</y>
     </size>
-    <breakAllTilesToWin>false</breakAllTilesToWin>
   </meta>
   <objects/>
   <grid>
@@ -83,7 +82,7 @@
       <tile id="8">empty</tile>
     </tiles>
     <tiles id="6">
-      <tile id="0">goal</tile>
+      <tile id="0">goal:menu/levelHub</tile>
       <tile id="1">bridge:3</tile>
       <tile id="2">solid</tile>
       <tile id="3">ice</tile>

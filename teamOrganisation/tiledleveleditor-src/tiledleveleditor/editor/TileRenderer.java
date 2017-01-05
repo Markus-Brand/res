@@ -28,6 +28,9 @@ public class TileRenderer {
         } else if (serial.equals("solid")) {
             bg = Color.GRAY;
             border = null;
+        } else if (serial.equals("ice")) {
+            bg = new Color(100, 200, 255);
+            border = null;
         } else if (serial.startsWith("breaking")) {
             bg = Color.GREEN.darker();
             border = bg.darker();
@@ -44,14 +47,17 @@ public class TileRenderer {
             bg = Color.YELLOW;
             border = bg.darker();
             text = "Br:" + serial.split(":")[1];
-        } else if (serial.equals("goal")) {
+        } else if (serial.startsWith("newLevel")) {
+            bg = Color.GREEN;
+            border = new Color(154, 255, 51);
+            text = "nL:" + serial.split(":")[1];
+        } else if (serial.startsWith("goal")) {
             bg = Color.MAGENTA.darker();
             border = bg.darker();
             text = "  !  ";
         } else {
             System.err.println("unknown tileType: " + serial);
             bg = Color.RED;
-
         }
 
         int s = (int) Math.ceil(scale);

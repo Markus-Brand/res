@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
   <meta>
-    <gridmode>Grid4</gridmode>
     <title>mainmenue</title>
     <description>main menue of the game</description>
+    <escapeAction/>
     <startPosition>
       <x>8</x>
       <y>3</y>
@@ -13,6 +13,7 @@
       <y>7</y>
     </size>
   </meta>
+  <objects/>
   <grid>
     <tiles id="0">
       <tile id="0">bridge:-2</tile>

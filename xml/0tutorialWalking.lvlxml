@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
   <meta>
-    <gridmode>Grid4</gridmode>
     <title>Tutorial 1 - Movements</title>
     <description>Use the WASD-Keys to move to the goal. Be careful not to fall down.</description>
+    <escapeAction>menu/levelHub</escapeAction>
     <startPosition>
       <x>0</x>
       <y>4</y>
@@ -12,13 +12,12 @@
       <x>5</x>
       <y>5</y>
     </size>
-    <escapeAction>menu/levelHub</escapeAction>
   </meta>
   <objects>
     <textOverlay>
       <position>
-        <x>0</x>
-        <y>-1</y>
+        <x>0.0</x>
+        <y>-1.0</y>
       </position>
       <text>Move to the goal!</text>
     </textOverlay>

@@ -44,7 +44,8 @@ public abstract class TileType {
 
                 @Override
                 public String serialize() {
-                    StringBuilder s = new StringBuilder(name.toLowerCase());
+                    StringBuilder s = new StringBuilder(name.substring(0, 1).toLowerCase());
+					s.append(name.substring(1, name.length()));
                     for (Entry<String, String> e : super.options.entrySet()) {
                         s.append(":").append(e.getValue());
                     }
