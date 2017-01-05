@@ -6,11 +6,11 @@
     <escapeAction>menu/levelHub</escapeAction>
     <startPosition>
       <x>1</x>
-      <y>4</y>
+      <y>5</y>
     </startPosition>
     <size>
-      <x>14</x>
-      <y>12</y>
+      <x>15</x>
+      <y>13</y>
     </size>
   </meta>
   <objects/>
@@ -30,8 +30,26 @@
       <tile id="11">empty</tile>
       <tile id="12">empty</tile>
       <tile id="13">empty</tile>
+      <tile id="14">empty</tile>
     </tiles>
     <tiles id="1">
+      <tile id="0">empty</tile>
+      <tile id="1">empty</tile>
+      <tile id="2">empty</tile>
+      <tile id="3">empty</tile>
+      <tile id="4">empty</tile>
+      <tile id="5">empty</tile>
+      <tile id="6">empty</tile>
+      <tile id="7">empty</tile>
+      <tile id="8">breaking:1</tile>
+      <tile id="9">empty</tile>
+      <tile id="10">breaking:1</tile>
+      <tile id="11">empty</tile>
+      <tile id="12">empty</tile>
+      <tile id="13">empty</tile>
+      <tile id="14">empty</tile>
+    </tiles>
+    <tiles id="2">
       <tile id="0">empty</tile>
       <tile id="1">empty</tile>
       <tile id="2">empty</tile>
@@ -46,8 +64,9 @@
       <tile id="11">empty</tile>
       <tile id="12">empty</tile>
       <tile id="13">empty</tile>
+      <tile id="14">empty</tile>
     </tiles>
-    <tiles id="2">
+    <tiles id="3">
       <tile id="0">empty</tile>
       <tile id="1">empty</tile>
       <tile id="2">empty</tile>
@@ -62,8 +81,9 @@
       <tile id="11">empty</tile>
       <tile id="12">empty</tile>
       <tile id="13">empty</tile>
+      <tile id="14">empty</tile>
     </tiles>
-    <tiles id="3">
+    <tiles id="4">
       <tile id="0">solid</tile>
       <tile id="1">solid</tile>
       <tile id="2">solid</tile>
@@ -78,8 +98,9 @@
       <tile id="11">bridge:+2</tile>
       <tile id="12">breaking:1</tile>
       <tile id="13">breaking:1</tile>
+      <tile id="14">breaking:1</tile>
     </tiles>
-    <tiles id="4">
+    <tiles id="5">
       <tile id="0">solid</tile>
       <tile id="1">solid</tile>
       <tile id="2">solid</tile>
@@ -93,9 +114,10 @@
       <tile id="10">solid</tile>
       <tile id="11">breaking:1</tile>
       <tile id="12">breaking:1</tile>
-      <tile id="13">switch:1</tile>
+      <tile id="13">empty</tile>
+      <tile id="14">switch:1</tile>
     </tiles>
-    <tiles id="5">
+    <tiles id="6">
       <tile id="0">solid</tile>
       <tile id="1">solid</tile>
       <tile id="2">solid</tile>
@@ -110,8 +132,9 @@
       <tile id="11">empty</tile>
       <tile id="12">breaking:1</tile>
       <tile id="13">breaking:1</tile>
+      <tile id="14">breaking:1</tile>
     </tiles>
-    <tiles id="6">
+    <tiles id="7">
       <tile id="0">empty</tile>
       <tile id="1">empty</tile>
       <tile id="2">empty</tile>
@@ -126,8 +149,9 @@
       <tile id="11">empty</tile>
       <tile id="12">empty</tile>
       <tile id="13">empty</tile>
+      <tile id="14">empty</tile>
     </tiles>
-    <tiles id="7">
+    <tiles id="8">
       <tile id="0">empty</tile>
       <tile id="1">empty</tile>
       <tile id="2">empty</tile>
@@ -142,8 +166,9 @@
       <tile id="11">empty</tile>
       <tile id="12">empty</tile>
       <tile id="13">empty</tile>
+      <tile id="14">empty</tile>
     </tiles>
-    <tiles id="8">
+    <tiles id="9">
       <tile id="0">empty</tile>
       <tile id="1">empty</tile>
       <tile id="2">empty</tile>
@@ -158,8 +183,9 @@
       <tile id="11">switch:3</tile>
       <tile id="12">empty</tile>
       <tile id="13">empty</tile>
+      <tile id="14">empty</tile>
     </tiles>
-    <tiles id="9">
+    <tiles id="10">
       <tile id="0">empty</tile>
       <tile id="1">empty</tile>
       <tile id="2">empty</tile>
@@ -174,8 +200,9 @@
       <tile id="11">empty</tile>
       <tile id="12">empty</tile>
       <tile id="13">empty</tile>
+      <tile id="14">empty</tile>
     </tiles>
-    <tiles id="10">
+    <tiles id="11">
       <tile id="0">empty</tile>
       <tile id="1">empty</tile>
       <tile id="2">empty</tile>
@@ -190,8 +217,9 @@
       <tile id="11">empty</tile>
       <tile id="12">empty</tile>
       <tile id="13">empty</tile>
+      <tile id="14">empty</tile>
     </tiles>
-    <tiles id="11">
+    <tiles id="12">
       <tile id="0">empty</tile>
       <tile id="1">empty</tile>
       <tile id="2">empty</tile>
@@ -206,6 +234,7 @@
       <tile id="11">empty</tile>
       <tile id="12">empty</tile>
       <tile id="13">empty</tile>
+      <tile id="14">empty</tile>
     </tiles>
   </grid>
 </map>
