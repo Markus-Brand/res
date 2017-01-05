@@ -13,7 +13,6 @@
       <y>5</y>
     </size>
     <escapeAction>menu/levelHub</escapeAction>
-    <winAction>menu/levelHub</winAction>
   </meta>
   <objects>
     <textOverlay>
@@ -58,7 +57,7 @@
       <tile id="1">empty</tile>
       <tile id="2">solid</tile>
       <tile id="3">solid</tile>
-      <tile id="4">goal</tile>
+      <tile id="4">goal:menu/levelHub</tile>
     </tiles>
   </grid>
 </map>

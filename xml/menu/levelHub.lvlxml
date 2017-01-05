@@ -41,27 +41,27 @@
       <tile id="20">newLevel:menu/mainMenu</tile>
     </tiles>
     <tiles id="1">
-      <tile id="0">newLevel:menu/mainMenu</tile>
+      <tile id="0">goal:menu/mainMenu</tile>
       <tile id="1">solid</tile>
       <tile id="2">solid</tile>
-      <tile id="3">solid</tile>
-      <tile id="4">gameStateBridge:+1</tile>
-      <tile id="5">solid</tile>
-      <tile id="6">gameStateBridge:+2</tile>
-      <tile id="7">solid</tile>
-      <tile id="8">gameStateBridge:+3</tile>
-      <tile id="9">solid</tile>
-      <tile id="10">gameStateBridge:+4</tile>
-      <tile id="11">solid</tile>
-      <tile id="12">gameStateBridge:+5</tile>
-      <tile id="13">solid</tile>
-      <tile id="14">gameStateBridge:+6</tile>
-      <tile id="15">solid</tile>
-      <tile id="16">gameStateBridge:+7</tile>
-      <tile id="17">solid</tile>
-      <tile id="18">gameStateBridge:+8</tile>
-      <tile id="19">solid</tile>
-      <tile id="20">gameStateBridge:+9</tile>
+      <tile id="3">gameStateBridge:0tutorialWalking</tile>
+      <tile id="4">solid</tile>
+      <tile id="5">gameStateBridge:1tutorialBridges</tile>
+      <tile id="6">solid</tile>
+      <tile id="7">gameStateBridge:2tutorialBreaking</tile>
+      <tile id="8">solid</tile>
+      <tile id="9">gameStateBridge:3tutorialIce</tile>
+      <tile id="10">solid</tile>
+      <tile id="11">gameStateBridge:+5</tile>
+      <tile id="12">solid</tile>
+      <tile id="13">gameStateBridge:+6</tile>
+      <tile id="14">solid</tile>
+      <tile id="15">gameStateBridge:+7</tile>
+      <tile id="16">solid</tile>
+      <tile id="17">gameStateBridge:+8</tile>
+      <tile id="18">solid</tile>
+      <tile id="19">gameStateBridge:+9</tile>
+      <tile id="20">solid</tile>
     </tiles>
   </grid>
 </map>

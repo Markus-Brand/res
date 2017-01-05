@@ -14,7 +14,6 @@
     </size>
     <breakAllTilesToWin>false</breakAllTilesToWin>
     <escapeAction>menu/levelHub</escapeAction>
-    <winAction>menu/levelHub</winAction>
   </meta>
   <objects/>
   <grid>
@@ -204,7 +203,7 @@
       <tile id="6">empty</tile>
       <tile id="7">empty</tile>
       <tile id="8">empty</tile>
-      <tile id="9">goal</tile>
+      <tile id="9">goal:menu/levelHub</tile>
       <tile id="10">empty</tile>
       <tile id="11">empty</tile>
       <tile id="12">empty</tile>
