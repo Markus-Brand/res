@@ -13,7 +13,7 @@
       <y>2</y>
     </size>
     <breakAllTilesToWin>false</breakAllTilesToWin>
-    <escapeAction>menu\\mainMenu</escapeAction>
+    <escapeAction>menu/mainMenu</escapeAction>
   </meta>
   <objects/>
   <grid>
@@ -28,20 +28,20 @@
       <tile id="7">empty</tile>
       <tile id="8">newLevel:3tutorialIce</tile>
       <tile id="9">empty</tile>
-      <tile id="10">newLevel:menu\\mainMenu</tile>
+      <tile id="10">newLevel:menu/mainMenu</tile>
       <tile id="11">empty</tile>
-      <tile id="12">newLevel:menu\\mainMenu</tile>
+      <tile id="12">newLevel:menu/mainMenu</tile>
       <tile id="13">empty</tile>
-      <tile id="14">newLevel:menu\\mainMenu</tile>
+      <tile id="14">newLevel:menu/mainMenu</tile>
       <tile id="15">empty</tile>
-      <tile id="16">newLevel:menu\\mainMenu</tile>
+      <tile id="16">newLevel:menu/mainMenu</tile>
       <tile id="17">empty</tile>
-      <tile id="18">newLevel:menu\\mainMenu</tile>
+      <tile id="18">newLevel:menu/mainMenu</tile>
       <tile id="19">empty</tile>
-      <tile id="20">newLevel:menu\\mainMenu</tile>
+      <tile id="20">newLevel:menu/mainMenu</tile>
     </tiles>
     <tiles id="1">
-      <tile id="0">newLevel:menu\\mainMenu</tile>
+      <tile id="0">newLevel:menu/mainMenu</tile>
       <tile id="1">solid</tile>
       <tile id="2">solid</tile>
       <tile id="3">solid</tile>

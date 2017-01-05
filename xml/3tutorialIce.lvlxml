@@ -13,8 +13,8 @@
       <y>10</y>
     </size>
     <breakAllTilesToWin>false</breakAllTilesToWin>
-    <escapeAction>menu\\levelHub</escapeAction>
-    <winAction>menu\\levelHub</winAction>
+    <escapeAction>menu/levelHub</escapeAction>
+    <winAction>menu/levelHub</winAction>
   </meta>
   <objects/>
   <grid>
