@@ -30,9 +30,9 @@
       <tile id="0">solid</tile>
       <tile id="1">switch:1</tile>
       <tile id="2">solid</tile>
-      <tile id="3">bridge:+2</tile>
-      <tile id="4">bridge:+2</tile>
-      <tile id="5">bridge:+2</tile>
+      <tile id="3">bridge:h:+2</tile>
+      <tile id="4">bridge:h:+2</tile>
+      <tile id="5">bridge:h:+2</tile>
       <tile id="6">solid</tile>
       <tile id="7">switch:3</tile>
       <tile id="8">solid</tile>
@@ -50,7 +50,7 @@
     </tiles>
     <tiles id="3">
       <tile id="0">empty</tile>
-      <tile id="1">bridge:+1</tile>
+      <tile id="1">bridge:v:+1</tile>
       <tile id="2">empty</tile>
       <tile id="3">empty</tile>
       <tile id="4">empty</tile>
@@ -61,7 +61,7 @@
     </tiles>
     <tiles id="4">
       <tile id="0">empty</tile>
-      <tile id="1">bridge:+1</tile>
+      <tile id="1">bridge:v:+1</tile>
       <tile id="2">empty</tile>
       <tile id="3">empty</tile>
       <tile id="4">empty</tile>
@@ -72,7 +72,7 @@
     </tiles>
     <tiles id="5">
       <tile id="0">empty</tile>
-      <tile id="1">bridge:+1</tile>
+      <tile id="1">bridge:v:+1</tile>
       <tile id="2">empty</tile>
       <tile id="3">empty</tile>
       <tile id="4">empty</tile>
@@ -96,9 +96,9 @@
       <tile id="0">solid</tile>
       <tile id="1">switch:2</tile>
       <tile id="2">solid</tile>
-      <tile id="3">bridge:+3</tile>
-      <tile id="4">bridge:+3</tile>
-      <tile id="5">bridge:+3</tile>
+      <tile id="3">bridge:h:+3</tile>
+      <tile id="4">bridge:h:+3</tile>
+      <tile id="5">bridge:h:+3</tile>
       <tile id="6">solid</tile>
       <tile id="7">goal:menu/levelHub</tile>
       <tile id="8">solid</tile>

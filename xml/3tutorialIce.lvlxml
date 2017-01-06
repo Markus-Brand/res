@@ -53,11 +53,11 @@
     </tiles>
     <tiles id="4">
       <tile id="0">ice</tile>
-      <tile id="1">empty</tile>
+      <tile id="1">wall</tile>
       <tile id="2">ice</tile>
       <tile id="3">ice</tile>
       <tile id="4">ice</tile>
-      <tile id="5">empty</tile>
+      <tile id="5">wall</tile>
       <tile id="6">ice</tile>
     </tiles>
     <tiles id="5">
@@ -89,11 +89,11 @@
     </tiles>
     <tiles id="8">
       <tile id="0">ice</tile>
-      <tile id="1">bridge:-2</tile>
+      <tile id="1">bridge:h:-2</tile>
       <tile id="2">ice</tile>
       <tile id="3">breaking:1</tile>
       <tile id="4">ice</tile>
-      <tile id="5">bridge:+1</tile>
+      <tile id="5">bridge:h:+1</tile>
       <tile id="6">ice</tile>
     </tiles>
     <tiles id="9">

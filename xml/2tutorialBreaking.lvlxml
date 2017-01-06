@@ -95,7 +95,7 @@
       <tile id="8">solid</tile>
       <tile id="9">solid</tile>
       <tile id="10">solid</tile>
-      <tile id="11">bridge:+2</tile>
+      <tile id="11">bridge:h:+2</tile>
       <tile id="12">breaking:1</tile>
       <tile id="13">breaking:1</tile>
       <tile id="14">breaking:1</tile>
@@ -144,7 +144,7 @@
       <tile id="6">empty</tile>
       <tile id="7">empty</tile>
       <tile id="8">empty</tile>
-      <tile id="9">bridge:+1</tile>
+      <tile id="9">bridge:v:+1</tile>
       <tile id="10">empty</tile>
       <tile id="11">empty</tile>
       <tile id="12">empty</tile>
@@ -195,7 +195,7 @@
       <tile id="6">empty</tile>
       <tile id="7">empty</tile>
       <tile id="8">empty</tile>
-      <tile id="9">bridge:+3</tile>
+      <tile id="9">bridge:v:+3</tile>
       <tile id="10">empty</tile>
       <tile id="11">empty</tile>
       <tile id="12">empty</tile>
@@ -212,7 +212,7 @@
       <tile id="6">empty</tile>
       <tile id="7">empty</tile>
       <tile id="8">empty</tile>
-      <tile id="9">bridge:+4</tile>
+      <tile id="9">bridge:v:+4</tile>
       <tile id="10">empty</tile>
       <tile id="11">empty</tile>
       <tile id="12">empty</tile>

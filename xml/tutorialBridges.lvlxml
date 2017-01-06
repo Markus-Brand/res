@@ -73,7 +73,7 @@
     <tiles id="5">
       <tile id="0">empty</tile>
       <tile id="1">empty</tile>
-      <tile id="2">bridge:1</tile>
+      <tile id="2">bridge:h:1</tile>
       <tile id="3">empty</tile>
       <tile id="4">empty</tile>
       <tile id="5">empty</tile>
@@ -83,7 +83,7 @@
     </tiles>
     <tiles id="6">
       <tile id="0">goal:menu/levelHub</tile>
-      <tile id="1">bridge:3</tile>
+      <tile id="1">bridge:h:3</tile>
       <tile id="2">solid</tile>
       <tile id="3">solid</tile>
       <tile id="4">solid</tile>
@@ -106,9 +106,9 @@
     <tiles id="8">
       <tile id="0">empty</tile>
       <tile id="1">empty</tile>
-      <tile id="2">bridge:2</tile>
+      <tile id="2">bridge:h:2</tile>
       <tile id="3">breaking:1</tile>
-      <tile id="4">bridge:1</tile>
+      <tile id="4">bridge:h:1</tile>
       <tile id="5">breaking:1</tile>
       <tile id="6">empty</tile>
       <tile id="7">empty</tile>
