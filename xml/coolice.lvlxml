@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+  <meta>
+    <title>Unnamed Level</title>
+    <description/>
+    <escapeAction>menu/mainMenu</escapeAction>
+    <startPosition>
+      <x>1</x>
+      <y>2</y>
+    </startPosition>
+    <size>
+      <x>7</x>
+      <y>7</y>
+    </size>
+  </meta>
+  <objects/>
+  <grid>
+    <tiles id="0">
+      <tile id="0">empty</tile>
+      <tile id="1">iceCorner:/</tile>
+      <tile id="2">ice</tile>
+      <tile id="3">iceCorner:\</tile>
+      <tile id="4">empty</tile>
+      <tile id="5">empty</tile>
+      <tile id="6">empty</tile>
+    </tiles>
+    <tiles id="1">
+      <tile id="0">iceCorner:/</tile>
+      <tile id="1">ice</tile>
+      <tile id="2">iceCorner:\</tile>
+      <tile id="3">ice</tile>
+      <tile id="4">empty</tile>
+      <tile id="5">empty</tile>
+      <tile id="6">empty</tile>
+    </tiles>
+    <tiles id="2">
+      <tile id="0">iceCorner:\</tile>
+      <tile id="1">solid</tile>
+      <tile id="2">iceCorner:/</tile>
+      <tile id="3">ice</tile>
+      <tile id="4">empty</tile>
+      <tile id="5">empty</tile>
+      <tile id="6">empty</tile>
+    </tiles>
+    <tiles id="3">
+      <tile id="0">empty</tile>
+      <tile id="1">iceCorner:\</tile>
+      <tile id="2">ice</tile>
+      <tile id="3">solid</tile>
+      <tile id="4">ice</tile>
+      <tile id="5">ice</tile>
+      <tile id="6">iceCorner:\</tile>
+    </tiles>
+    <tiles id="4">
+      <tile id="0">empty</tile>
+      <tile id="1">empty</tile>
+      <tile id="2">empty</tile>
+      <tile id="3">ice</tile>
+      <tile id="4">empty</tile>
+      <tile id="5">empty</tile>
+      <tile id="6">ice</tile>
+    </tiles>
+    <tiles id="5">
+      <tile id="0">empty</tile>
+      <tile id="1">empty</tile>
+      <tile id="2">empty</tile>
+      <tile id="3">ice</tile>
+      <tile id="4">empty</tile>
+      <tile id="5">empty</tile>
+      <tile id="6">ice</tile>
+    </tiles>
+    <tiles id="6">
+      <tile id="0">empty</tile>
+      <tile id="1">empty</tile>
+      <tile id="2">empty</tile>
+      <tile id="3">iceCorner:\</tile>
+      <tile id="4">ice</tile>
+      <tile id="5">ice</tile>
+      <tile id="6">goal:menu/levelHub</tile>
+    </tiles>
+  </grid>
+</map>
