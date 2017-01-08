@@ -17,7 +17,7 @@ import tiledleveleditor.core.TileTypeContainer;
  */
 public class CursorStatus {
 
-	private int toolHeight = 42;
+	private int toolHeight = 35;
 	private int width = 315;
 	private int margin = 10;
 
@@ -69,7 +69,7 @@ public class CursorStatus {
 			}
 			Rectangle2D bounds = g.getFontMetrics().getStringBounds(msg, g);
 			g.setColor(Color.BLACK);
-			g.drawString(msg, x + 5, y + (int) (bounds.getHeight() - 2) + 10);
+			g.drawString(msg, x + 5, y + (int) (bounds.getHeight() - 2) + 5);
 			i++;
 		}
 	}

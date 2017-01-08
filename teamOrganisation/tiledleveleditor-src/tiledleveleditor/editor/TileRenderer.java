@@ -7,12 +7,36 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.geom.Rectangle2D;
+import java.util.HashMap;
+import java.util.Map;
 import tiledleveleditor.core.Tile;
 
 /**
  * renders a given tile
  */
 public class TileRenderer {
+	
+	private static final int borderPercent = 80;
+	public static final Color IceBorder = new Color(0, 0, 0, 128);
+	
+	private static Map<String, String> flipDirection = new HashMap() {{
+		put("left", "right");
+		put("right", "left");
+		put("up", "down");
+		put("down", "up");
+	}};
+	private static Map<String, Point> start = new HashMap() {{
+		put("left", new Point(0, 0));
+		put("up", new Point(0, 0));
+		put("right", new Point(borderPercent, 0));
+		put("down", new Point(0, borderPercent));
+	}};
+	private static Map<String, Point> size = new HashMap() {{
+		put("left", new Point(100 - borderPercent, 100));
+		put("right", new Point(100 - borderPercent, 100));
+		put("up", new Point(100, 100 - borderPercent));
+		put("down", new Point(100, 100 - borderPercent));
+	}};
 
     public void render(Graphics2D g, Tile tile, Point loc, float scale, Color markColor) {
 
@@ -21,12 +45,18 @@ public class TileRenderer {
         Color border = null;
         int borderWidth = Math.max((int)(scale)/19, 1);
         String text = null;
+		
+		Map<String, Color> extraBorders = new HashMap<>();
+		
 
         if (serial.equals("empty")) {
             bg = Color.LIGHT_GRAY;
             border = Color.GRAY;
         } else if (serial.equals("solid")) {
             bg = Color.GRAY;
+            border = null;
+        } else if (serial.equals("wall")) {
+            bg = Color.DARK_GRAY;
             border = null;
         } else if (serial.equals("ice")) {
             bg = new Color(100, 200, 255);
@@ -46,7 +76,7 @@ public class TileRenderer {
         } else if (serial.startsWith("bridge")) {
             bg = Color.YELLOW;
             border = bg.darker();
-            text = "Br:" + serial.split(":")[1];
+            text = "Br:" + serial.split(":")[2];
         } else if (serial.startsWith("newLevel")) {
             bg = Color.GREEN;
             border = new Color(154, 255, 51);
@@ -55,6 +85,16 @@ public class TileRenderer {
             bg = Color.MAGENTA.darker();
             border = bg.darker();
             text = "  !  ";
+		} else if (serial.startsWith("oneWay")) {
+			bg = Color.gray;
+			extraBorders.put(serial.split(":")[1], Color.DARK_GRAY);
+		} else if (serial.startsWith("forcing")) {
+			bg = Color.gray;
+			extraBorders.put(serial.split(":")[1], Color.ORANGE);
+		} else if (serial.startsWith("iceCorner")) {
+			bg = new Color(100, 200, 255);
+			extraBorders.put(flipDirection.get(serial.split(":")[1]), IceBorder);
+			extraBorders.put(flipDirection.get(serial.split(":")[2]), IceBorder);
         } else {
             System.err.println("unknown tileType: " + serial);
             bg = Color.RED;
@@ -70,6 +110,17 @@ public class TileRenderer {
             g.setStroke(new BasicStroke(borderWidth));
             g.drawRect(loc.x + (borderWidth-2)/2, loc.y + (borderWidth-2)/2, s - borderWidth + 1, s - borderWidth + 1);
         }
+		for (String direction : flipDirection.keySet()) {
+			Color c = extraBorders.get(direction);
+			if (c != null) {
+				g.setColor(c);
+				int x = start.get(direction).x * s / 100;
+				int y = start.get(direction).y * s / 100;
+				int w = (int)(size.get(direction).x * s / 100f);
+				int h = (int)(size.get(direction).y * s / 100f);
+				g.fillRect(loc.x + x, loc.y + y, w, h);
+			}
+		}
         if (markColor != null) {
             g.setColor(markColor);
             g.fillOval(loc.x + (s / 4), loc.y + (s / 4), s / 2, s / 2);

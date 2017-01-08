@@ -49,6 +49,8 @@ public class TileTypeContainer {
 
 		types.add(new TileType.NoParams("Ice"));
 
+		types.add(new TileType.NoParams("Wall"));
+
 		types.add(new TileType.Simple("Goal", "handler=menu/levelHub"));
 
 		types.add(new TileType.Simple("Breaking", "stepAmount=1"));
@@ -57,7 +59,13 @@ public class TileTypeContainer {
 
 		types.add(new TileType.Simple("Switch", "switch=1"));
 
-		types.add(new TileType.Simple("Bridge", "condition=+1"));
+		types.add(new TileType.Simple("Bridge", "0_orientation=h;1_condition=+1"));
+
+		types.add(new TileType.Simple("OneWay", "blocking=left"));
+
+		types.add(new TileType.Simple("IceCorner", "upDown=up;leftRight=left"));
+
+		types.add(new TileType.Simple("Forcing", "direction=left"));
 
 		types.add(new TileType.Simple("GameStateBridge", "level=tutorial1"));
 
