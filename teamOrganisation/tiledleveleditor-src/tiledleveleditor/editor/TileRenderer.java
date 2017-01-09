@@ -88,7 +88,7 @@ public class TileRenderer {
 		} else if (serial.startsWith("oneWay")) {
 			bg = Color.gray;
 			extraBorders.put(serial.split(":")[1], Color.DARK_GRAY);
-		} else if (serial.startsWith("forcing")) {
+		} else if (serial.startsWith("catapult")) {
 			bg = Color.gray;
 			extraBorders.put(serial.split(":")[1], Color.ORANGE);
 		} else if (serial.startsWith("iceCorner")) {

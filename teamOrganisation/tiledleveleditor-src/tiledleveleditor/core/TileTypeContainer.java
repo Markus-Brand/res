@@ -63,9 +63,9 @@ public class TileTypeContainer {
 
 		types.add(new TileType.Simple("OneWay", "blocking=left"));
 
-		types.add(new TileType.Simple("IceCorner", "upDown=up;leftRight=left"));
+		types.add(new TileType.Simple("IceCorner", "0_upDown=up;1_leftRight=left"));
 
-		types.add(new TileType.Simple("Forcing", "direction=left"));
+		types.add(new TileType.Simple("Catapult", "direction=left"));
 
 		types.add(new TileType.Simple("GameStateBridge", "level=tutorial1"));
 
