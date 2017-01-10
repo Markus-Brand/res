@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+  <meta>
+    <title>My own level</title>
+    <description>A usergenerated level</description>
+    <escapeAction></escapeAction>
+    <startPosition>
+      <x>0</x>
+      <y>0</y>
+    </startPosition>
+    <size>
+      <x>1</x>
+      <y>1</y>
+    </size>
+  </meta>
+  <objects/>
+  <grid>
+    <tiles id="0">
+      <tile id="0">solid</tile>
+    </tiles>
+  </grid>
+</map>
