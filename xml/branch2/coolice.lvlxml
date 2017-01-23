@@ -3,7 +3,7 @@
   <meta>
     <title>Unnamed Level</title>
     <description/>
-    <escapeAction>menu/mainMenu</escapeAction>
+    <escapeAction>menu/levelHub</escapeAction>
     <startPosition>
       <x>15</x>
       <y>21</y>
