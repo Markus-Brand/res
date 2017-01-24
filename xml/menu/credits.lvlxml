@@ -13,7 +13,138 @@
       <y>2</y>
     </size>
   </meta>
-  <objects/>
+  <objects>
+	<textOverlay>
+		<size>64</size>
+		<text>
+			Credits
+		</text>
+		<position>
+			<x>-0.6</x>
+			<y>-6.5</y>
+		</position>
+	</textOverlay>
+	<textOverlay>
+		<size>32</size>
+		<text>
+			Developers: 
+		</text>
+		<position>
+			<x>-3</x>
+			<y>-5.5</y>
+		</position>
+	</textOverlay>
+	<textOverlay>
+		<size>24</size>
+		<text>
+			Erik Brendel
+		</text>
+		<position>
+			<x>0.5</x>
+			<y>-5.4</y>
+		</position>
+	</textOverlay>
+	<textOverlay>
+		<size>24</size>
+		<text>
+			Markus Brand
+		</text>
+		<position>
+			<x>0.5</x>
+			<y>-4.9</y>
+		</position>
+	</textOverlay>
+	<textOverlay>
+		<size>24</size>
+		<text>
+			Merlin de la Haye
+		</text>
+		<position>
+			<x>0.5</x>
+			<y>-4.4</y>
+		</position>
+	</textOverlay>
+	<textOverlay>
+		<size>24</size>
+		<text>
+			Florian Henschel
+		</text>
+		<position>
+			<x>0.5</x>
+			<y>-3.9</y>
+		</position>
+	</textOverlay>
+	<textOverlay>
+		<size>24</size>
+		<text>
+			Tom Schwarzburg
+		</text>
+		<position>
+			<x>0.5</x>
+			<y>-3.4</y>
+		</position>
+	</textOverlay>
+	<textOverlay>
+		<size>32</size>
+		<text>
+			Tools used: 
+		</text>
+		<position>
+			<x>-3</x>
+			<y>-2.8</y>
+		</position>
+	</textOverlay>
+	<textOverlay>
+		<size>24</size>
+		<text>
+			Music: Jukedeck - www.jukedeck.com
+		</text>
+		<position>
+			<x>0.5</x>
+			<y>-2.7</y>
+		</position>
+	</textOverlay>
+	<textOverlay>
+		<size>24</size>
+		<text>
+			Programming: Squeak
+		</text>
+		<position>
+			<x>0.5</x>
+			<y>-2.2</y>
+		</position>
+	</textOverlay>
+	<textOverlay>
+		<size>24</size>
+		<text>
+			Animations: Blender
+		</text>
+		<position>
+			<x>0.5</x>
+			<y>-1.7</y>
+		</position>
+	</textOverlay>
+	<textOverlay>
+		<size>24</size>
+		<text>
+			Textures: Photoshop
+		</text>
+		<position>
+			<x>0.5</x>
+			<y>-1.2</y>
+		</position>
+	</textOverlay>
+	<textOverlay>
+		<size>24</size>
+		<text>
+			Sounds: Bfxr
+		</text>
+		<position>
+			<x>0.5</x>
+			<y>-0.7</y>
+		</position>
+	</textOverlay>
+  </objects>
   <grid>
     <tiles id="0">
       <tile id="0">solid</tile>
