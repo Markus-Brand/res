@@ -1,140 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<map>
-  <meta>
-    <title>Cool Level</title>
-    <description>Merlin und Erik haben sich mal Gedanken gemacht...</description>
-    <escapeAction>menu/levelHub</escapeAction>
-    <startPosition>
-      <x>2</x>
-      <y>6</y>
-    </startPosition>
-    <size>
-      <x>9</x>
-      <y>11</y>
-    </size>
-  </meta>
-  <objects/>
-  <grid>
-    <tiles id="0">
-      <tile id="0">solid</tile>
-      <tile id="1">bridge:h:-1</tile>
-      <tile id="2">switch:1</tile>
-      <tile id="3">ice</tile>
-      <tile id="4">breaking:2</tile>
-      <tile id="5">empty</tile>
-      <tile id="6">empty</tile>
-      <tile id="7">empty</tile>
-      <tile id="8">empty</tile>
-    </tiles>
-    <tiles id="1">
-      <tile id="0">empty</tile>
-      <tile id="1">empty</tile>
-      <tile id="2">empty</tile>
-      <tile id="3">empty</tile>
-      <tile id="4">breaking:2</tile>
-      <tile id="5">switch:2</tile>
-      <tile id="6">empty</tile>
-      <tile id="7">empty</tile>
-      <tile id="8">empty</tile>
-    </tiles>
-    <tiles id="2">
-      <tile id="0">empty</tile>
-      <tile id="1">empty</tile>
-      <tile id="2">empty</tile>
-      <tile id="3">empty</tile>
-      <tile id="4">teleporter:3@4</tile>
-      <tile id="5">empty</tile>
-      <tile id="6">empty</tile>
-      <tile id="7">empty</tile>
-      <tile id="8">empty</tile>
-    </tiles>
-    <tiles id="3">
-      <tile id="0">empty</tile>
-      <tile id="1">empty</tile>
-      <tile id="2">empty</tile>
-      <tile id="3">empty</tile>
-      <tile id="4">empty</tile>
-      <tile id="5">empty</tile>
-      <tile id="6">empty</tile>
-      <tile id="7">empty</tile>
-      <tile id="8">empty</tile>
-    </tiles>
-    <tiles id="4">
-      <tile id="0">empty</tile>
-      <tile id="1">empty</tile>
-      <tile id="2">switch:1</tile>
-      <tile id="3">teleporter:0@0</tile>
-      <tile id="4">empty</tile>
-      <tile id="5">empty</tile>
-      <tile id="6">empty</tile>
-      <tile id="7">empty</tile>
-      <tile id="8">empty</tile>
-    </tiles>
-    <tiles id="5">
-      <tile id="0">empty</tile>
-      <tile id="1">empty</tile>
-      <tile id="2">bridge:h:1</tile>
-      <tile id="3">empty</tile>
-      <tile id="4">empty</tile>
-      <tile id="5">empty</tile>
-      <tile id="6">empty</tile>
-      <tile id="7">empty</tile>
-      <tile id="8">empty</tile>
-    </tiles>
-    <tiles id="6">
-      <tile id="0">goal:menu/levelHub</tile>
-      <tile id="1">bridge:h:3</tile>
-      <tile id="2">solid</tile>
-      <tile id="3">ice</tile>
-      <tile id="4">ice</tile>
-      <tile id="5">ice</tile>
-      <tile id="6">breaking:2</tile>
-      <tile id="7">breaking:1</tile>
-      <tile id="8">breaking:1</tile>
-    </tiles>
-    <tiles id="7">
-      <tile id="0">empty</tile>
-      <tile id="1">empty</tile>
-      <tile id="2">ice</tile>
-      <tile id="3">empty</tile>
-      <tile id="4">empty</tile>
-      <tile id="5">empty</tile>
-      <tile id="6">breaking:1</tile>
-      <tile id="7">breaking:1</tile>
-      <tile id="8">switch:1</tile>
-    </tiles>
-    <tiles id="8">
-      <tile id="0">empty</tile>
-      <tile id="1">empty</tile>
-      <tile id="2">bridge:h:2</tile>
-      <tile id="3">ice</tile>
-      <tile id="4">bridge:h:1</tile>
-      <tile id="5">breaking:1</tile>
-      <tile id="6">empty</tile>
-      <tile id="7">empty</tile>
-      <tile id="8">empty</tile>
-    </tiles>
-    <tiles id="9">
-      <tile id="0">empty</tile>
-      <tile id="1">empty</tile>
-      <tile id="2">ice</tile>
-      <tile id="3">empty</tile>
-      <tile id="4">empty</tile>
-      <tile id="5">ice</tile>
-      <tile id="6">empty</tile>
-      <tile id="7">empty</tile>
-      <tile id="8">empty</tile>
-    </tiles>
-    <tiles id="10">
-      <tile id="0">empty</tile>
-      <tile id="1">empty</tile>
-      <tile id="2">breaking:1</tile>
-      <tile id="3">switch:1</tile>
-      <tile id="4">switch:3</tile>
-      <tile id="5">breaking:1</tile>
-      <tile id="6">empty</tile>
-      <tile id="7">empty</tile>
-      <tile id="8">empty</tile>
-    </tiles>
-  </grid>
-</map>
+<map>  <meta>    <title>Cool Level</title>    <description>Merlin und Erik haben sich mal Gedanken gemacht...</description>    <startPosition>      <x>2</x>      <y>6</y>    </startPosition>    <size>      <x>9</x>      <y>11</y>    </size>    <escapeAction>menu/levelHub</escapeAction>  </meta>  <grid>    <tiles id="0">      <tile id="0">solid</tile>      <tile id="1">bridge:h:-1</tile>      <tile id="2">switch:1</tile>      <tile id="3">ice</tile>      <tile id="4">breaking:2</tile>      <tile id="5">empty</tile>      <tile id="6">empty</tile>      <tile id="7">empty</tile>      <tile id="8">empty</tile>    </tiles>    <tiles id="1">      <tile id="0">empty</tile>      <tile id="1">empty</tile>      <tile id="2">empty</tile>      <tile id="3">empty</tile>      <tile id="4">breaking:2</tile>      <tile id="5">switch:2</tile>      <tile id="6">empty</tile>      <tile id="7">empty</tile>      <tile id="8">empty</tile>    </tiles>    <tiles id="2">      <tile id="0">empty</tile>      <tile id="1">empty</tile>      <tile id="2">empty</tile>      <tile id="3">empty</tile>      <tile id="4">teleporter:3@4</tile>      <tile id="5">empty</tile>      <tile id="6">empty</tile>      <tile id="7">empty</tile>      <tile id="8">empty</tile>    </tiles>    <tiles id="3">      <tile id="0">empty</tile>      <tile id="1">empty</tile>      <tile id="2">empty</tile>      <tile id="3">empty</tile>      <tile id="4">empty</tile>      <tile id="5">empty</tile>      <tile id="6">empty</tile>      <tile id="7">empty</tile>      <tile id="8">empty</tile>    </tiles>    <tiles id="4">      <tile id="0">empty</tile>      <tile id="1">empty</tile>      <tile id="2">switch:1</tile>      <tile id="3">teleporter:0@0</tile>      <tile id="4">empty</tile>      <tile id="5">empty</tile>      <tile id="6">empty</tile>      <tile id="7">empty</tile>      <tile id="8">empty</tile>    </tiles>    <tiles id="5">      <tile id="0">empty</tile>      <tile id="1">empty</tile>      <tile id="2">bridge:v:1</tile>      <tile id="3">empty</tile>      <tile id="4">empty</tile>      <tile id="5">empty</tile>      <tile id="6">empty</tile>      <tile id="7">empty</tile>      <tile id="8">empty</tile>    </tiles>    <tiles id="6">      <tile id="0">goal:menu/levelHub</tile>      <tile id="1">bridge:h:3</tile>      <tile id="2">solid</tile>      <tile id="3">ice</tile>      <tile id="4">ice</tile>      <tile id="5">ice</tile>      <tile id="6">breaking:2</tile>      <tile id="7">breaking:1</tile>      <tile id="8">breaking:1</tile>    </tiles>    <tiles id="7">      <tile id="0">empty</tile>      <tile id="1">empty</tile>      <tile id="2">ice</tile>      <tile id="3">empty</tile>      <tile id="4">empty</tile>      <tile id="5">empty</tile>      <tile id="6">breaking:1</tile>      <tile id="7">breaking:1</tile>      <tile id="8">switch:1</tile>    </tiles>    <tiles id="8">      <tile id="0">empty</tile>      <tile id="1">empty</tile>      <tile id="2">bridge:v:2</tile>      <tile id="3">ice</tile>      <tile id="4">bridge:h:1</tile>      <tile id="5">breaking:1</tile>      <tile id="6">empty</tile>      <tile id="7">empty</tile>      <tile id="8">empty</tile>    </tiles>    <tiles id="9">      <tile id="0">empty</tile>      <tile id="1">empty</tile>      <tile id="2">ice</tile>      <tile id="3">empty</tile>      <tile id="4">empty</tile>      <tile id="5">ice</tile>      <tile id="6">empty</tile>      <tile id="7">empty</tile>      <tile id="8">empty</tile>    </tiles>    <tiles id="10">      <tile id="0">empty</tile>      <tile id="1">empty</tile>      <tile id="2">breaking:1</tile>      <tile id="3">switch:1</tile>      <tile id="4">switch:3</tile>      <tile id="5">breaking:1</tile>      <tile id="6">empty</tile>      <tile id="7">empty</tile>      <tile id="8">empty</tile>    </tiles>  </grid></map>
