@@ -1,151 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<map>
-  <meta>
-    <title>options</title>
-    <description>control options by stepping on the corrosponding tile (music: 0%, 25%, 50%, 75%, 100%; quality: low, high; fps: on, off)</description>
-    <escapeAction>menu/mainMenu</escapeAction>
-    <startPosition>
-      <x>8</x>
-      <y>4</y>
-    </startPosition>
-    <size>
-      <x>10</x>
-      <y>11</y>
-    </size>
-  </meta>
-  <objects/>
-  <grid>
-    <tiles id="0">
-      <tile id="0">solid</tile>
-      <tile id="1">solid</tile>
-      <tile id="2">solid</tile>
-      <tile id="3">solid</tile>
-      <tile id="4">solid</tile>
-      <tile id="5">solid</tile>
-      <tile id="6">solid</tile>
-      <tile id="7">solid</tile>
-      <tile id="8">solid</tile>
-      <tile id="9">empty</tile>
-    </tiles>
-    <tiles id="1">
-      <tile id="0">solid</tile>
-      <tile id="1">colorChange:green</tile>
-      <tile id="2">colorChange:cyan</tile>
-      <tile id="3">colorChange:blue</tile>
-      <tile id="4">colorChange:violet</tile>
-      <tile id="5">colorChange:pink</tile>
-      <tile id="6">colorChange:red</tile>
-      <tile id="7">colorChange:orange</tile>
-      <tile id="8">solid</tile>
-      <tile id="9">empty</tile>
-    </tiles>
-    <tiles id="2">
-      <tile id="0">solid</tile>
-      <tile id="1">solid</tile>
-      <tile id="2">solid</tile>
-      <tile id="3">solid</tile>
-      <tile id="4">solid</tile>
-      <tile id="5">solid</tile>
-      <tile id="6">solid</tile>
-      <tile id="7">solid</tile>
-      <tile id="8">solid</tile>
-      <tile id="9">empty</tile>
-    </tiles>
-    <tiles id="3">
-      <tile id="0">solid</tile>
-      <tile id="1">solid</tile>
-      <tile id="2">solid</tile>
-      <tile id="3">solid</tile>
-      <tile id="4">solid</tile>
-      <tile id="5">solid</tile>
-      <tile id="6">solid</tile>
-      <tile id="7">solid</tile>
-      <tile id="8">solid</tile>
-      <tile id="9">empty</tile>
-    </tiles>
-    <tiles id="4">
-      <tile id="0">solid</tile>
-      <tile id="1">solid</tile>
-      <tile id="2">solid</tile>
-      <tile id="3">music</tile>
-      <tile id="4">sounds</tile>
-      <tile id="5">graphics</tile>
-      <tile id="6">solid</tile>
-      <tile id="7">solid</tile>
-      <tile id="8">solid</tile>
-      <tile id="9">newLevel:menu/mainMenu</tile>
-    </tiles>
-    <tiles id="5">
-      <tile id="0">solid</tile>
-      <tile id="1">solid</tile>
-      <tile id="2">solid</tile>
-      <tile id="3">solid</tile>
-      <tile id="4">solid</tile>
-      <tile id="5">solid</tile>
-      <tile id="6">solid</tile>
-      <tile id="7">solid</tile>
-      <tile id="8">solid</tile>
-      <tile id="9">empty</tile>
-    </tiles>
-    <tiles id="6">
-      <tile id="0">solid</tile>
-      <tile id="1">solid</tile>
-      <tile id="2">solid</tile>
-      <tile id="3">solid</tile>
-      <tile id="4">solid</tile>
-      <tile id="5">solid</tile>
-      <tile id="6">solid</tile>
-      <tile id="7">solid</tile>
-      <tile id="8">solid</tile>
-      <tile id="9">empty</tile>
-    </tiles>
-    <tiles id="7">
-      <tile id="0">solid</tile>
-      <tile id="1">solid</tile>
-      <tile id="2">solid</tile>
-      <tile id="3">solid</tile>
-      <tile id="4">switch:1</tile>
-      <tile id="5">solid</tile>
-      <tile id="6">solid</tile>
-      <tile id="7">solid</tile>
-      <tile id="8">solid</tile>
-      <tile id="9">empty</tile>
-    </tiles>
-    <tiles id="8">
-      <tile id="0">solid</tile>
-      <tile id="1">solid</tile>
-      <tile id="2">solid</tile>
-      <tile id="3">solid</tile>
-      <tile id="4">solid</tile>
-      <tile id="5">solid</tile>
-      <tile id="6">solid</tile>
-      <tile id="7">solid</tile>
-      <tile id="8">solid</tile>
-      <tile id="9">empty</tile>
-    </tiles>
-    <tiles id="9">
-      <tile id="0">empty</tile>
-      <tile id="1">empty</tile>
-      <tile id="2">empty</tile>
-      <tile id="3">empty</tile>
-      <tile id="4">bridge:v:1</tile>
-      <tile id="5">empty</tile>
-      <tile id="6">empty</tile>
-      <tile id="7">empty</tile>
-      <tile id="8">empty</tile>
-      <tile id="9">empty</tile>
-    </tiles>
-    <tiles id="10">
-      <tile id="0">empty</tile>
-      <tile id="1">empty</tile>
-      <tile id="2">empty</tile>
-      <tile id="3">empty</tile>
-      <tile id="4">reset</tile>
-      <tile id="5">empty</tile>
-      <tile id="6">empty</tile>
-      <tile id="7">empty</tile>
-      <tile id="8">empty</tile>
-      <tile id="9">empty</tile>
-    </tiles>
-  </grid>
-</map>
+<map>  <meta>    <title>options    </title>    <description>control options by stepping on the corrosponding tile (music: 0%, 25%, 50%, 75%, 100%; quality: low, high; fps: on, off)    </description>    <startPosition>      <x>9      </x>      <y>6      </y>    </startPosition>    <size>      <x>11      </x>      <y>13      </y>    </size>    <escapeAction>menu/mainMenu    </escapeAction>  </meta>  <grid>    <tiles id="0">      <tile id="0">empty      </tile>      <tile id="1">solid      </tile>      <tile id="2">solid      </tile>      <tile id="3">solid      </tile>      <tile id="4">solid      </tile>      <tile id="5">solid      </tile>      <tile id="6">solid      </tile>      <tile id="7">solid      </tile>      <tile id="8">solid      </tile>      <tile id="9">solid      </tile>      <tile id="10">empty      </tile>    </tiles>    <tiles id="1">      <tile id="0">empty      </tile>      <tile id="1">solid      </tile>      <tile id="2">solid      </tile>      <tile id="3">solid      </tile>      <tile id="4">solid      </tile>      <tile id="5">colorChange:random      </tile>      <tile id="6">solid      </tile>      <tile id="7">solid      </tile>      <tile id="8">solid      </tile>      <tile id="9">solid      </tile>      <tile id="10">empty      </tile>    </tiles>    <tiles id="2">      <tile id="0">empty      </tile>      <tile id="1">solid      </tile>      <tile id="2">solid      </tile>      <tile id="3">solid      </tile>      <tile id="4">solid      </tile>      <tile id="5">solid      </tile>      <tile id="6">solid      </tile>      <tile id="7">solid      </tile>      <tile id="8">solid      </tile>      <tile id="9">solid      </tile>      <tile id="10">empty      </tile>    </tiles>    <tiles id="3">      <tile id="0">empty      </tile>      <tile id="1">solid      </tile>      <tile id="2">colorChange:green      </tile>      <tile id="3">colorChange:cyan      </tile>      <tile id="4">colorChange:blue      </tile>      <tile id="5">colorChange:violet      </tile>      <tile id="6">colorChange:pink      </tile>      <tile id="7">colorChange:red      </tile>      <tile id="8">colorChange:orange      </tile>      <tile id="9">solid      </tile>      <tile id="10">empty      </tile>    </tiles>    <tiles id="4">      <tile id="0">empty      </tile>      <tile id="1">solid      </tile>      <tile id="2">solid      </tile>      <tile id="3">solid      </tile>      <tile id="4">solid      </tile>      <tile id="5">solid      </tile>      <tile id="6">solid      </tile>      <tile id="7">solid      </tile>      <tile id="8">solid      </tile>      <tile id="9">solid      </tile>      <tile id="10">empty      </tile>    </tiles>    <tiles id="5">      <tile id="0">empty      </tile>      <tile id="1">solid      </tile>      <tile id="2">solid      </tile>      <tile id="3">solid      </tile>      <tile id="4">solid      </tile>      <tile id="5">solid      </tile>      <tile id="6">solid      </tile>      <tile id="7">solid      </tile>      <tile id="8">solid      </tile>      <tile id="9">solid      </tile>      <tile id="10">empty      </tile>    </tiles>    <tiles id="6">      <tile id="0">empty      </tile>      <tile id="1">solid      </tile>      <tile id="2">solid      </tile>      <tile id="3">solid      </tile>      <tile id="4">music      </tile>      <tile id="5">sounds      </tile>      <tile id="6">graphics      </tile>      <tile id="7">solid      </tile>      <tile id="8">solid      </tile>      <tile id="9">solid      </tile>      <tile id="10">newLevel:menu/mainMenu      </tile>    </tiles>    <tiles id="7">      <tile id="0">empty      </tile>      <tile id="1">solid      </tile>      <tile id="2">solid      </tile>      <tile id="3">solid      </tile>      <tile id="4">solid      </tile>      <tile id="5">solid      </tile>      <tile id="6">solid      </tile>      <tile id="7">solid      </tile>      <tile id="8">solid      </tile>      <tile id="9">solid      </tile>      <tile id="10">empty      </tile>    </tiles>    <tiles id="8">      <tile id="0">empty      </tile>      <tile id="1">solid      </tile>      <tile id="2">solid      </tile>      <tile id="3">solid      </tile>      <tile id="4">solid      </tile>      <tile id="5">solid      </tile>      <tile id="6">solid      </tile>      <tile id="7">solid      </tile>      <tile id="8">solid      </tile>      <tile id="9">solid      </tile>      <tile id="10">empty      </tile>    </tiles>    <tiles id="9">      <tile id="0">empty      </tile>      <tile id="1">solid      </tile>      <tile id="2">solid      </tile>      <tile id="3">solid      </tile>      <tile id="4">solid      </tile>      <tile id="5">switch:1      </tile>      <tile id="6">solid      </tile>      <tile id="7">solid      </tile>      <tile id="8">solid      </tile>      <tile id="9">solid      </tile>      <tile id="10">empty      </tile>    </tiles>    <tiles id="10">      <tile id="0">empty      </tile>      <tile id="1">solid      </tile>      <tile id="2">solid      </tile>      <tile id="3">solid      </tile>      <tile id="4">solid      </tile>      <tile id="5">solid      </tile>      <tile id="6">solid      </tile>      <tile id="7">solid      </tile>      <tile id="8">solid      </tile>      <tile id="9">solid      </tile>      <tile id="10">empty      </tile>    </tiles>    <tiles id="11">      <tile id="0">empty      </tile>      <tile id="1">empty      </tile>      <tile id="2">empty      </tile>      <tile id="3">empty      </tile>      <tile id="4">empty      </tile>      <tile id="5">bridge:v:1      </tile>      <tile id="6">empty      </tile>      <tile id="7">empty      </tile>      <tile id="8">empty      </tile>      <tile id="9">empty      </tile>      <tile id="10">empty      </tile>    </tiles>    <tiles id="12">      <tile id="0">empty      </tile>      <tile id="1">empty      </tile>      <tile id="2">empty      </tile>      <tile id="3">empty      </tile>      <tile id="4">empty      </tile>      <tile id="5">reset      </tile>      <tile id="6">empty      </tile>      <tile id="7">empty      </tile>      <tile id="8">empty      </tile>      <tile id="9">empty      </tile>      <tile id="10">empty      </tile>    </tiles>  </grid></map>
